@@ -1,0 +1,8 @@
+#import <Foundation/Foundation.h>
+
+#import <ReactiveCocoa/ReactiveCocoa.h>
+#import <ReactiveViewModel/ReactiveViewModel.h>
+
+#define EXP_SHORTHAND
+#import "Specta.h"
+#import "Expecta.h"
