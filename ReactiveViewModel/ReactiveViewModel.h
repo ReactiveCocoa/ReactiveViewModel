@@ -6,3 +6,4 @@
 //  Copyright (c) 2013 GitHub. All rights reserved.
 //
 
+#import "RVMViewModel.h"
