@@ -847,6 +847,10 @@
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
 				GCC_PREFIX_HEADER = "ReactiveViewModelTests/ReactiveViewModelTests-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					External/ReactiveCocoa/external/specta/src,
+					"External/ReactiveCocoa/external/expecta/src/**",
+				);
 				INFOPLIST_FILE = "ReactiveViewModelTests/ReactiveViewModelTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = octest;
@@ -859,6 +863,10 @@
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
 				GCC_PREFIX_HEADER = "ReactiveViewModelTests/ReactiveViewModelTests-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					External/ReactiveCocoa/external/specta/src,
+					"External/ReactiveCocoa/external/expecta/src/**",
+				);
 				INFOPLIST_FILE = "ReactiveViewModelTests/ReactiveViewModelTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = octest;
@@ -896,6 +904,11 @@
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
 				);
 				GCC_PREFIX_HEADER = "ReactiveViewModelTests/ReactiveViewModelTests-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					External/ReactiveCocoa/external/specta/src,
+					"External/ReactiveCocoa/external/expecta/src/**",
+				);
 				INFOPLIST_FILE = "ReactiveViewModelTests/ReactiveViewModelTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = octest;
@@ -911,6 +924,11 @@
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
 				);
 				GCC_PREFIX_HEADER = "ReactiveViewModelTests/ReactiveViewModelTests-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					External/ReactiveCocoa/external/specta/src,
+					"External/ReactiveCocoa/external/expecta/src/**",
+				);
 				INFOPLIST_FILE = "ReactiveViewModelTests/ReactiveViewModelTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = octest;
@@ -947,6 +965,10 @@
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
 				GCC_PREFIX_HEADER = "ReactiveViewModelTests/ReactiveViewModelTests-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					External/ReactiveCocoa/external/specta/src,
+					"External/ReactiveCocoa/external/expecta/src/**",
+				);
 				INFOPLIST_FILE = "ReactiveViewModelTests/ReactiveViewModelTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = octest;
@@ -973,6 +995,11 @@
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
 				);
 				GCC_PREFIX_HEADER = "ReactiveViewModelTests/ReactiveViewModelTests-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					External/ReactiveCocoa/external/specta/src,
+					"External/ReactiveCocoa/external/expecta/src/**",
+				);
 				INFOPLIST_FILE = "ReactiveViewModelTests/ReactiveViewModelTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = octest;
@@ -1009,6 +1036,10 @@
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
 				GCC_PREFIX_HEADER = "ReactiveViewModelTests/ReactiveViewModelTests-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					External/ReactiveCocoa/external/specta/src,
+					"External/ReactiveCocoa/external/expecta/src/**",
+				);
 				INFOPLIST_FILE = "ReactiveViewModelTests/ReactiveViewModelTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = octest;
@@ -1035,6 +1066,11 @@
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
 				);
 				GCC_PREFIX_HEADER = "ReactiveViewModelTests/ReactiveViewModelTests-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					External/ReactiveCocoa/external/specta/src,
+					"External/ReactiveCocoa/external/expecta/src/**",
+				);
 				INFOPLIST_FILE = "ReactiveViewModelTests/ReactiveViewModelTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = octest;
