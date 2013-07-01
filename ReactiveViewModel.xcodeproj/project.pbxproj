@@ -27,6 +27,14 @@
 		D0948B3C17815E7300BA8F23 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0948B3B17815E7300BA8F23 /* SenTestingKit.framework */; };
 		D0948B3D17815E7800BA8F23 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0948B3B17815E7300BA8F23 /* SenTestingKit.framework */; };
 		D0948B3F17815E9700BA8F23 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0948B3E17815E9700BA8F23 /* UIKit.framework */; };
+		D0948B551781610600BA8F23 /* RVMViewModel.h in Headers */ = {isa = PBXBuildFile; fileRef = D0948B531781610600BA8F23 /* RVMViewModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D0948B561781610600BA8F23 /* RVMViewModel.h in Headers */ = {isa = PBXBuildFile; fileRef = D0948B531781610600BA8F23 /* RVMViewModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D0948B571781610600BA8F23 /* RVMViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D0948B541781610600BA8F23 /* RVMViewModel.m */; };
+		D0948B581781610600BA8F23 /* RVMViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D0948B541781610600BA8F23 /* RVMViewModel.m */; };
+		D0948B5A1781618A00BA8F23 /* RVMViewModelSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = D0948B591781618A00BA8F23 /* RVMViewModelSpec.m */; };
+		D0948B5B1781618A00BA8F23 /* RVMViewModelSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = D0948B591781618A00BA8F23 /* RVMViewModelSpec.m */; };
+		D0948B5E178161A800BA8F23 /* RVMTestViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D0948B5D178161A800BA8F23 /* RVMTestViewModel.m */; };
+		D0948B5F178161A800BA8F23 /* RVMTestViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D0948B5D178161A800BA8F23 /* RVMTestViewModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -221,6 +229,11 @@
 		D0948AE417815B4200BA8F23 /* Expecta.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Expecta.xcodeproj; path = External/ReactiveCocoa/external/expecta/Expecta.xcodeproj; sourceTree = "<group>"; };
 		D0948B3B17815E7300BA8F23 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		D0948B3E17815E9700BA8F23 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		D0948B531781610600BA8F23 /* RVMViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RVMViewModel.h; sourceTree = "<group>"; };
+		D0948B541781610600BA8F23 /* RVMViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RVMViewModel.m; sourceTree = "<group>"; };
+		D0948B591781618A00BA8F23 /* RVMViewModelSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RVMViewModelSpec.m; sourceTree = "<group>"; };
+		D0948B5C178161A800BA8F23 /* RVMTestViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RVMTestViewModel.h; sourceTree = "<group>"; };
+		D0948B5D178161A800BA8F23 /* RVMTestViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RVMTestViewModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -311,6 +324,7 @@
 			isa = PBXGroup;
 			children = (
 				D0948A4B178159AD00BA8F23 /* ReactiveViewModel.h */,
+				D0948B4A178160FC00BA8F23 /* View Model */,
 				D0948A45178159AD00BA8F23 /* Supporting Files */,
 			);
 			path = ReactiveViewModel;
@@ -341,6 +355,8 @@
 				D0948A5C178159AD00BA8F23 /* ReactiveViewModelTests-Info.plist */,
 				D0948A5D178159AD00BA8F23 /* InfoPlist.strings */,
 				D0948ABC17815B1800BA8F23 /* ReactiveViewModelTests-Prefix.pch */,
+				D0948B5C178161A800BA8F23 /* RVMTestViewModel.h */,
+				D0948B5D178161A800BA8F23 /* RVMTestViewModel.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -412,6 +428,7 @@
 		D0948ABD17815B2000BA8F23 /* Specs */ = {
 			isa = PBXGroup;
 			children = (
+				D0948B591781618A00BA8F23 /* RVMViewModelSpec.m */,
 			);
 			name = Specs;
 			sourceTree = "<group>";
@@ -451,6 +468,15 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		D0948B4A178160FC00BA8F23 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				D0948B531781610600BA8F23 /* RVMViewModel.h */,
+				D0948B541781610600BA8F23 /* RVMViewModel.m */,
+			);
+			name = "View Model";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -459,6 +485,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0948ABA17815AF100BA8F23 /* ReactiveViewModel.h in Headers */,
+				D0948B551781610600BA8F23 /* RVMViewModel.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -467,6 +494,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0948ABB17815AF100BA8F23 /* ReactiveViewModel.h in Headers */,
+				D0948B561781610600BA8F23 /* RVMViewModel.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -756,6 +784,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0948B571781610600BA8F23 /* RVMViewModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -763,6 +792,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0948B5A1781618A00BA8F23 /* RVMViewModelSpec.m in Sources */,
+				D0948B5E178161A800BA8F23 /* RVMTestViewModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -770,6 +801,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0948B581781610600BA8F23 /* RVMViewModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -777,6 +809,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0948B5B1781618A00BA8F23 /* RVMViewModelSpec.m in Sources */,
+				D0948B5F178161A800BA8F23 /* RVMTestViewModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
