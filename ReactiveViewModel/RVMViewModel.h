@@ -10,9 +10,11 @@
 
 @class RACSignal;
 
+// Adapts a domain model to be user-presentable, and implements behaviors that
+// drive the UI.
 @interface RVMViewModel : NSObject
 
-// The model which the view model represents.
+// The model which the view model is adapting for the UI.
 @property (nonatomic, readonly, strong) id model;
 
 // Whether the view model is currently "active."
@@ -38,10 +40,14 @@
 @property (nonatomic, strong, readonly) RACSignal *didBecomeInactiveSignal;
 
 // Calls -initWithModel: with a nil model.
-- (id)init;
+- (instancetype)init;
 
-// Creates a new view model with the given model. `model` may be nil.
-- (id)initWithModel:(id)model;
+// Creates a new view model with the given model.
+//
+// model - The model to adapt for the UI. This argument may be nil.
+//
+// Returns an initialized view model, or nil if an error occurs.
+- (instancetype)initWithModel:(id)model;
 
 // Subscribes (or resubscribes) to the given signal whenever
 // `didBecomeActiveSignal` fires.
