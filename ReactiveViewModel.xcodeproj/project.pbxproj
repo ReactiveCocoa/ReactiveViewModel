@@ -20,12 +20,6 @@
 		D0948AF517815B7200BA8F23 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0948ACA17815B3600BA8F23 /* ReactiveCocoa.framework */; };
 		D0948AF617815B7700BA8F23 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0948ACA17815B3600BA8F23 /* ReactiveCocoa.framework */; };
 		D0948AF917815B7E00BA8F23 /* libReactiveCocoa-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D0948ACC17815B3600BA8F23 /* libReactiveCocoa-iOS.a */; };
-		D0948B0B17815D4200BA8F23 /* RVMStubObject.h in Headers */ = {isa = PBXBuildFile; fileRef = D0948B0917815D4200BA8F23 /* RVMStubObject.h */; };
-		D0948B0C17815D4200BA8F23 /* RVMStubObject.h in Headers */ = {isa = PBXBuildFile; fileRef = D0948B0917815D4200BA8F23 /* RVMStubObject.h */; };
-		D0948B0D17815D4200BA8F23 /* RVMStubObject.m in Sources */ = {isa = PBXBuildFile; fileRef = D0948B0A17815D4200BA8F23 /* RVMStubObject.m */; };
-		D0948B0E17815D4200BA8F23 /* RVMStubObject.m in Sources */ = {isa = PBXBuildFile; fileRef = D0948B0A17815D4200BA8F23 /* RVMStubObject.m */; };
-		D0948B1C17815D5600BA8F23 /* RVMTestSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = D0948B1B17815D5600BA8F23 /* RVMTestSpec.m */; };
-		D0948B1D17815D5600BA8F23 /* RVMTestSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = D0948B1B17815D5600BA8F23 /* RVMTestSpec.m */; };
 		D0948B3317815E4B00BA8F23 /* libExpecta.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D0948AEC17815B4200BA8F23 /* libExpecta.a */; };
 		D0948B3417815E4B00BA8F23 /* libSpecta.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D0948ADD17815B3F00BA8F23 /* libSpecta.a */; };
 		D0948B3917815E5600BA8F23 /* libExpecta-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D0948AEE17815B4200BA8F23 /* libExpecta-iOS.a */; };
@@ -225,9 +219,6 @@
 		D0948ABE17815B3600BA8F23 /* ReactiveCocoa.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ReactiveCocoa.xcodeproj; path = External/ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa.xcodeproj; sourceTree = "<group>"; };
 		D0948AD517815B3F00BA8F23 /* Specta.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Specta.xcodeproj; path = External/ReactiveCocoa/external/specta/Specta.xcodeproj; sourceTree = "<group>"; };
 		D0948AE417815B4200BA8F23 /* Expecta.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Expecta.xcodeproj; path = External/ReactiveCocoa/external/expecta/Expecta.xcodeproj; sourceTree = "<group>"; };
-		D0948B0917815D4200BA8F23 /* RVMStubObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RVMStubObject.h; sourceTree = "<group>"; };
-		D0948B0A17815D4200BA8F23 /* RVMStubObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RVMStubObject.m; sourceTree = "<group>"; };
-		D0948B1B17815D5600BA8F23 /* RVMTestSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RVMTestSpec.m; sourceTree = "<group>"; };
 		D0948B3B17815E7300BA8F23 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		D0948B3E17815E9700BA8F23 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
@@ -320,8 +311,6 @@
 			isa = PBXGroup;
 			children = (
 				D0948A4B178159AD00BA8F23 /* ReactiveViewModel.h */,
-				D0948B0917815D4200BA8F23 /* RVMStubObject.h */,
-				D0948B0A17815D4200BA8F23 /* RVMStubObject.m */,
 				D0948A45178159AD00BA8F23 /* Supporting Files */,
 			);
 			path = ReactiveViewModel;
@@ -423,7 +412,6 @@
 		D0948ABD17815B2000BA8F23 /* Specs */ = {
 			isa = PBXGroup;
 			children = (
-				D0948B1B17815D5600BA8F23 /* RVMTestSpec.m */,
 			);
 			name = Specs;
 			sourceTree = "<group>";
@@ -471,7 +459,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0948ABA17815AF100BA8F23 /* ReactiveViewModel.h in Headers */,
-				D0948B0B17815D4200BA8F23 /* RVMStubObject.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -480,7 +467,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0948ABB17815AF100BA8F23 /* ReactiveViewModel.h in Headers */,
-				D0948B0C17815D4200BA8F23 /* RVMStubObject.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -770,7 +756,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0948B0D17815D4200BA8F23 /* RVMStubObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -778,7 +763,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0948B1C17815D5600BA8F23 /* RVMTestSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -786,7 +770,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0948B0E17815D4200BA8F23 /* RVMStubObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -794,7 +777,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0948B1D17815D5600BA8F23 /* RVMTestSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
