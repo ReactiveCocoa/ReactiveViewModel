@@ -10,72 +10,21 @@
 
 SpecBegin(RVMViewModel)
 
-__block RVMTestViewModel *rootViewModel;
-__block RVMTestViewModel *parentViewModel;
-__block RVMTestViewModel *childViewModel;
+__block RVMTestViewModel *viewModel;
 
 beforeEach(^{
-	rootViewModel = [[RVMTestViewModel alloc] initWithModel:@"root" parentViewModel:nil];
-	parentViewModel = [[RVMTestViewModel alloc] initWithModel:@"parent" parentViewModel:rootViewModel];
-	childViewModel = [[RVMTestViewModel alloc] initWithModel:@"child" parentViewModel:parentViewModel];
-});
-
-describe(@"-init", ^{
-	it(@"should call -initWithModel:parentViewModel:", ^{
-		RVMTestViewModel *viewModel = [[RVMTestViewModel alloc] init];
-		expect(viewModel.calledInitWithModelParentViewModel).to.beTruthy();
-	});
-});
-
-describe(@"the view model chain", ^{
-	it(@"should know its parent view model", ^{
-		expect(childViewModel.parentViewModel).to.equal(parentViewModel);
-		expect(parentViewModel.parentViewModel).to.equal(rootViewModel);
-		expect(rootViewModel.parentViewModel).to.beNil();
-	});
-
-	it(@"should know its root view model", ^{
-		expect(childViewModel.rootViewModel).to.equal(rootViewModel);
-		expect(parentViewModel.rootViewModel).to.equal(rootViewModel);
-		expect(rootViewModel.rootViewModel).to.equal(rootViewModel);
-	});
-});
-
-describe(@"-viewModelPassingTest:", ^{
-	it(@"should start with the receiver", ^{
-		id result = [childViewModel viewModelPassingTest:^(RVMViewModel *viewModel) {
-			return YES;
-		}];
-
-		expect(result).to.equal(childViewModel);
-	});
-
-	it(@"should return the first view model for which the block returns YES", ^{
-		id result = [childViewModel viewModelPassingTest:^(RVMViewModel *viewModel) {
-			return [viewModel.model isEqual:@"parent"];
-		}];
-
-		expect(result).to.equal(parentViewModel);
-	});
-
-	it(@"should return nil when there are no passing view models", ^{
-		id result = [childViewModel viewModelPassingTest:^(RVMViewModel *viewModel) {
-			return [viewModel.model isEqual:@"nooooooooooope"];
-		}];
-
-		expect(result).to.beNil();
-	});
+	viewModel = [[RVMTestViewModel alloc] initWithModel:@"foobar"];
 });
 
 describe(@"active property", ^{
 	it(@"should default to NO", ^{
-		expect(rootViewModel.active).to.beFalsy();
+		expect(viewModel.active).to.beFalsy();
 	});
 
 	it(@"should send on didBecomeActiveSignal when set to YES", ^{
 		__block NSUInteger nextEvents = 0;
-		[rootViewModel.didBecomeActiveSignal subscribeNext:^(RVMViewModel *viewModel) {
-			expect(viewModel).to.beIdenticalTo(rootViewModel);
+		[viewModel.didBecomeActiveSignal subscribeNext:^(RVMViewModel *viewModel) {
+			expect(viewModel).to.beIdenticalTo(viewModel);
 			expect(viewModel.active).to.beTruthy();
 
 			nextEvents++;
@@ -83,22 +32,22 @@ describe(@"active property", ^{
 
 		expect(nextEvents).to.equal(0);
 
-		rootViewModel.active = YES;
+		viewModel.active = YES;
 		expect(nextEvents).to.equal(1);
 
 		// Indistinct changes should not trigger the signal again.
-		rootViewModel.active = YES;
+		viewModel.active = YES;
 		expect(nextEvents).to.equal(1);
 
-		rootViewModel.active = NO;
-		rootViewModel.active = YES;
+		viewModel.active = NO;
+		viewModel.active = YES;
 		expect(nextEvents).to.equal(2);
 	});
 
 	it(@"should send on didBecomeInactiveSignal when set to NO", ^{
 		__block NSUInteger nextEvents = 0;
-		[rootViewModel.didBecomeInactiveSignal subscribeNext:^(RVMViewModel *viewModel) {
-			expect(viewModel).to.beIdenticalTo(rootViewModel);
+		[viewModel.didBecomeInactiveSignal subscribeNext:^(RVMViewModel *viewModel) {
+			expect(viewModel).to.beIdenticalTo(viewModel);
 			expect(viewModel.active).to.beFalsy();
 
 			nextEvents++;
@@ -106,12 +55,12 @@ describe(@"active property", ^{
 
 		expect(nextEvents).to.equal(1);
 
-		rootViewModel.active = YES;
-		rootViewModel.active = NO;
+		viewModel.active = YES;
+		viewModel.active = NO;
 		expect(nextEvents).to.equal(2);
 
 		// Indistinct changes should not trigger the signal again.
-		rootViewModel.active = NO;
+		viewModel.active = NO;
 		expect(nextEvents).to.equal(2);
 	});
 
@@ -130,7 +79,7 @@ describe(@"active property", ^{
 			deallocated = NO;
 
 			createViewModel = ^{
-				RVMTestViewModel *viewModel = [[RVMTestViewModel alloc] initWithModel:nil parentViewModel:nil];
+				RVMTestViewModel *viewModel = [[RVMTestViewModel alloc] initWithModel:nil];
 				[viewModel.rac_deallocDisposable addDisposable:[RACDisposable disposableWithBlock:^{
 					deallocated = YES;
 				}]];

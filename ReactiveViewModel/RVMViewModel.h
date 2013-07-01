@@ -15,13 +15,6 @@
 // The model which the view model represents.
 @property (nonatomic, readonly, strong) id model;
 
-// The parent view model. Can be nil.
-@property (nonatomic, readonly, weak) RVMViewModel *parentViewModel;
-
-// Traverses up the `parentViewModel` chain until it finds a view model with a
-// nil parent.
-@property (nonatomic, readonly, weak) RVMViewModel *rootViewModel;
-
 // Whether the view model is currently "active."
 //
 // This generally implies that the associated view is visible. When set to NO,
@@ -44,22 +37,11 @@
 // upon subscription.
 @property (nonatomic, strong, readonly) RACSignal *didBecomeInactiveSignal;
 
-// Calls -initWithModel:parentViewModel: with a nil model and parent view model.
+// Calls -initWithModel: with a nil model.
 - (id)init;
 
-// Creates a new view model with the given model and parent view model. Both
-// arguments may be nil.
-- (id)initWithModel:(id)model parentViewModel:(RVMViewModel *)parentViewModel;
-
-// Traverses up the parent view model chain, starting at the current view model,
-// until it finds a view model that for which the block returns YES.
-//
-// Returns the first view model for which the block returns YES, or nil if it
-// reaches the end of the parent view model chain without finding a passing
-// view model.
-//
-// block - The test block called for each parent view model. Cannot be nil.
-- (id)viewModelPassingTest:(BOOL (^)(RVMViewModel *viewModel))block;
+// Creates a new view model with the given model. `model` may be nil.
+- (id)initWithModel:(id)model;
 
 // Subscribes (or resubscribes) to the given signal whenever
 // `didBecomeActiveSignal` fires.

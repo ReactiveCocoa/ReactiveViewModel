@@ -83,34 +83,16 @@ static const NSTimeInterval RVMViewModelInactiveThrottleInterval = 1;
 #pragma mark Lifecycle
 
 - (id)init {
-	return [self initWithModel:nil parentViewModel:nil];
+	return [self initWithModel:nil];
 }
 
-- (id)initWithModel:(id)model parentViewModel:(RVMViewModel *)parentViewModel {
+- (id)initWithModel:(id)model {
 	self = [super init];
 	if (self == nil) return nil;
 
 	_model = model;
-	_parentViewModel = parentViewModel;
 
 	return self;
-}
-
-#pragma mark Hierarchy
-
-- (RVMViewModel *)rootViewModel {
-	return [self viewModelPassingTest:^ BOOL (RVMViewModel *viewModel) {
-		return viewModel.parentViewModel == nil;
-	}];
-}
-
-- (id)viewModelPassingTest:(BOOL (^)(RVMViewModel *viewModel))block {
-	NSParameterAssert(block != nil);
-
-	BOOL passes = block(self);
-	if (passes) return self;
-
-	return [self.parentViewModel viewModelPassingTest:block];
 }
 
 #pragma mark Activation

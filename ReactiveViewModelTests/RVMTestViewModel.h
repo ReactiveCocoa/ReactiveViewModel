@@ -9,8 +9,4 @@
 #import "RVMViewModel.h"
 
 @interface RVMTestViewModel : RVMViewModel
-
-// Was -initWithModel:parentViewModel: called?
-@property (nonatomic, readonly, assign) BOOL calledInitWithModelParentViewModel;
-
 @end
