@@ -26,6 +26,13 @@
 		D0948B0E17815D4200BA8F23 /* RVMStubObject.m in Sources */ = {isa = PBXBuildFile; fileRef = D0948B0A17815D4200BA8F23 /* RVMStubObject.m */; };
 		D0948B1C17815D5600BA8F23 /* RVMTestSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = D0948B1B17815D5600BA8F23 /* RVMTestSpec.m */; };
 		D0948B1D17815D5600BA8F23 /* RVMTestSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = D0948B1B17815D5600BA8F23 /* RVMTestSpec.m */; };
+		D0948B3317815E4B00BA8F23 /* libExpecta.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D0948AEC17815B4200BA8F23 /* libExpecta.a */; };
+		D0948B3417815E4B00BA8F23 /* libSpecta.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D0948ADD17815B3F00BA8F23 /* libSpecta.a */; };
+		D0948B3917815E5600BA8F23 /* libExpecta-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D0948AEE17815B4200BA8F23 /* libExpecta-iOS.a */; };
+		D0948B3A17815E5600BA8F23 /* libSpecta-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D0948ADF17815B3F00BA8F23 /* libSpecta-iOS.a */; };
+		D0948B3C17815E7300BA8F23 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0948B3B17815E7300BA8F23 /* SenTestingKit.framework */; };
+		D0948B3D17815E7800BA8F23 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0948B3B17815E7300BA8F23 /* SenTestingKit.framework */; };
+		D0948B3F17815E9700BA8F23 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0948B3E17815E9700BA8F23 /* UIKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -155,6 +162,34 @@
 			remoteGlobalIDString = 88F440AA153DAC820097B4C3;
 			remoteInfo = "ReactiveCocoa-iOS";
 		};
+		D0948B2317815E4600BA8F23 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D0948AE417815B4200BA8F23 /* Expecta.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = E9ACDF0B13B2DD520010F4D7;
+			remoteInfo = Expecta;
+		};
+		D0948B2517815E4600BA8F23 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D0948AD517815B3F00BA8F23 /* Specta.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = E9D96A2514B6B8AB007D9521;
+			remoteInfo = Specta;
+		};
+		D0948B3517815E5200BA8F23 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D0948AE417815B4200BA8F23 /* Expecta.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = E93067CD13B2E6D100EA26FF;
+			remoteInfo = "Expecta-iOS";
+		};
+		D0948B3717815E5200BA8F23 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D0948AD517815B3F00BA8F23 /* Specta.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = E9B777A314BA294B00D8DC76;
+			remoteInfo = "Specta-iOS";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -193,6 +228,8 @@
 		D0948B0917815D4200BA8F23 /* RVMStubObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RVMStubObject.h; sourceTree = "<group>"; };
 		D0948B0A17815D4200BA8F23 /* RVMStubObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RVMStubObject.m; sourceTree = "<group>"; };
 		D0948B1B17815D5600BA8F23 /* RVMTestSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RVMTestSpec.m; sourceTree = "<group>"; };
+		D0948B3B17815E7300BA8F23 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		D0948B3E17815E9700BA8F23 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -209,6 +246,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0948B3D17815E7800BA8F23 /* SenTestingKit.framework in Frameworks */,
+				D0948B3317815E4B00BA8F23 /* libExpecta.a in Frameworks */,
+				D0948B3417815E4B00BA8F23 /* libSpecta.a in Frameworks */,
 				D0948AF617815B7700BA8F23 /* ReactiveCocoa.framework in Frameworks */,
 				D0948A59178159AD00BA8F23 /* ReactiveViewModel.framework in Frameworks */,
 				D0948AB517815AC200BA8F23 /* Foundation.framework in Frameworks */,
@@ -227,6 +267,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0948B3F17815E9700BA8F23 /* UIKit.framework in Frameworks */,
+				D0948B3C17815E7300BA8F23 /* SenTestingKit.framework in Frameworks */,
+				D0948B3917815E5600BA8F23 /* libExpecta-iOS.a in Frameworks */,
+				D0948B3A17815E5600BA8F23 /* libSpecta-iOS.a in Frameworks */,
 				D0948AF917815B7E00BA8F23 /* libReactiveCocoa-iOS.a in Frameworks */,
 				D0948AB817815ACD00BA8F23 /* Foundation.framework in Frameworks */,
 				D0948AA3178159F900BA8F23 /* libReactiveViewModel.a in Frameworks */,
@@ -266,6 +310,8 @@
 				D0948AD517815B3F00BA8F23 /* Specta.xcodeproj */,
 				D0948AB617815AC700BA8F23 /* Foundation.framework */,
 				D0948AB317815ABD00BA8F23 /* Foundation.framework */,
+				D0948B3B17815E7300BA8F23 /* SenTestingKit.framework */,
+				D0948B3E17815E9700BA8F23 /* UIKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -472,6 +518,8 @@
 			buildRules = (
 			);
 			dependencies = (
+				D0948B2417815E4600BA8F23 /* PBXTargetDependency */,
+				D0948B2617815E4600BA8F23 /* PBXTargetDependency */,
 				D0948A58178159AD00BA8F23 /* PBXTargetDependency */,
 			);
 			name = "ReactiveViewModel Mac Tests";
@@ -509,6 +557,8 @@
 			buildRules = (
 			);
 			dependencies = (
+				D0948B3617815E5200BA8F23 /* PBXTargetDependency */,
+				D0948B3817815E5200BA8F23 /* PBXTargetDependency */,
 				D0948AA2178159F900BA8F23 /* PBXTargetDependency */,
 			);
 			name = "ReactiveViewModel iOS Tests";
@@ -771,6 +821,26 @@
 			name = "ReactiveCocoa-iOS";
 			targetProxy = D0948AF717815B7B00BA8F23 /* PBXContainerItemProxy */;
 		};
+		D0948B2417815E4600BA8F23 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Expecta;
+			targetProxy = D0948B2317815E4600BA8F23 /* PBXContainerItemProxy */;
+		};
+		D0948B2617815E4600BA8F23 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Specta;
+			targetProxy = D0948B2517815E4600BA8F23 /* PBXContainerItemProxy */;
+		};
+		D0948B3617815E5200BA8F23 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Expecta-iOS";
+			targetProxy = D0948B3517815E5200BA8F23 /* PBXContainerItemProxy */;
+		};
+		D0948B3817815E5200BA8F23 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Specta-iOS";
+			targetProxy = D0948B3717815E5200BA8F23 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -852,6 +922,7 @@
 					"External/ReactiveCocoa/external/expecta/src/**",
 				);
 				INFOPLIST_FILE = "ReactiveViewModelTests/ReactiveViewModelTests-Info.plist";
+				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -868,6 +939,7 @@
 					"External/ReactiveCocoa/external/expecta/src/**",
 				);
 				INFOPLIST_FILE = "ReactiveViewModelTests/ReactiveViewModelTests-Info.plist";
+				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -910,6 +982,7 @@
 					"External/ReactiveCocoa/external/expecta/src/**",
 				);
 				INFOPLIST_FILE = "ReactiveViewModelTests/ReactiveViewModelTests-Info.plist";
+				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -930,6 +1003,7 @@
 					"External/ReactiveCocoa/external/expecta/src/**",
 				);
 				INFOPLIST_FILE = "ReactiveViewModelTests/ReactiveViewModelTests-Info.plist";
+				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -970,6 +1044,7 @@
 					"External/ReactiveCocoa/external/expecta/src/**",
 				);
 				INFOPLIST_FILE = "ReactiveViewModelTests/ReactiveViewModelTests-Info.plist";
+				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -1001,6 +1076,7 @@
 					"External/ReactiveCocoa/external/expecta/src/**",
 				);
 				INFOPLIST_FILE = "ReactiveViewModelTests/ReactiveViewModelTests-Info.plist";
+				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -1041,6 +1117,7 @@
 					"External/ReactiveCocoa/external/expecta/src/**",
 				);
 				INFOPLIST_FILE = "ReactiveViewModelTests/ReactiveViewModelTests-Info.plist";
+				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -1072,6 +1149,7 @@
 					"External/ReactiveCocoa/external/expecta/src/**",
 				);
 				INFOPLIST_FILE = "ReactiveViewModelTests/ReactiveViewModelTests-Info.plist";
+				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = octest;
 			};
