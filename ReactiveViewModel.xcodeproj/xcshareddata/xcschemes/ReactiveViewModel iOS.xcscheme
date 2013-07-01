@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D0948A8C178159F900BA8F23"
-               BuildableName = "libReactiveViewModel iOS.a"
+               BuildableName = "libReactiveViewModel.a"
                BlueprintName = "ReactiveViewModel iOS"
                ReferencedContainer = "container:ReactiveViewModel.xcodeproj">
             </BuildableReference>
