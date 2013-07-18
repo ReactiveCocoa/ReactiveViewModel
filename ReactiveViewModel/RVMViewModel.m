@@ -48,7 +48,7 @@ static const NSTimeInterval RVMViewModelInactiveThrottleInterval = 1;
 	if (_didBecomeActiveSignal == nil) {
 		@weakify(self);
 
-		_didBecomeActiveSignal = [[[RACObserve(self.active)
+		_didBecomeActiveSignal = [[[RACObserve(self, active)
 			filter:^(NSNumber *active) {
 				return active.boolValue;
 			}]
@@ -66,7 +66,7 @@ static const NSTimeInterval RVMViewModelInactiveThrottleInterval = 1;
 	if (_didBecomeInactiveSignal == nil) {
 		@weakify(self);
 
-		_didBecomeInactiveSignal = [[[RACObserve(self.active)
+		_didBecomeInactiveSignal = [[[RACObserve(self, active)
 			filter:^ BOOL (NSNumber *active) {
 				return !active.boolValue;
 			}]
@@ -100,7 +100,7 @@ static const NSTimeInterval RVMViewModelInactiveThrottleInterval = 1;
 - (RACSignal *)forwardSignalWhileActive:(RACSignal *)signal {
 	NSParameterAssert(signal != nil);
 
-	RACSignal *activeSignal = RACObserve(self.active);
+	RACSignal *activeSignal = RACObserve(self, active);
 
 	return [[RACSignal
 		createSignal:^(id<RACSubscriber> subscriber) {
@@ -139,7 +139,7 @@ static const NSTimeInterval RVMViewModelInactiveThrottleInterval = 1;
 
 	signal = [signal replayLast];
 
-	return [[[[[RACObserve(self.active)
+	return [[[[[RACObserve(self, active)
 		takeUntil:[signal ignoreValues]]
 		combineLatestWith:signal]
 		throttle:RVMViewModelInactiveThrottleInterval valuesPassingTest:^ BOOL (RACTuple *xs) {
