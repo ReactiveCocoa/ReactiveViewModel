@@ -163,11 +163,4 @@ static const NSTimeInterval RVMViewModelInactiveThrottleInterval = 1;
 	return [super automaticallyNotifiesObserversForKey:key];
 }
 
-- (void)setNilValueForKey:(NSString *)key {
-	// Ignore attempts to set primitive properties to nil. This is commonly
-	// caused by RACObserve noticing an intermediate key change.
-	//
-	// See https://github.com/ReactiveCocoa/ReactiveCocoa/issues/631.
-}
-
 @end
