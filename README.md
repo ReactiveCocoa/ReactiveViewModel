@@ -56,7 +56,7 @@ For example, a view model might handle:
  * Localization
  * Acting upon the user's input
 
-However, the view model is _not_ responsible for actually presenting
+However, the view model is not responsible for actually presenting
 information or handling input — that's the sole domain of the view layer. When
 the view model needs to communicate something to the view, it does so through
 a system of [data binding](#reactivecocoa).
