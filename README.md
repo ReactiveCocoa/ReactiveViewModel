@@ -50,11 +50,10 @@ where presentation _behavior_ goes.
 
 For example, a view model might handle:
 
- * Kicking off network or database fetches
+ * Kicking off network or database requests
  * Determining when information should be hidden or shown
  * Date and number formatting
  * Localization
- * Acting upon the user's input
 
 However, the view model is not responsible for actually presenting
 information or handling input — that's the sole domain of the view layer. When
