@@ -1,5 +1,119 @@
 # ReactiveViewModel
 
-Code and documentation for building Cocoa applications using
-[Model-View-ViewModel](http://en.wikipedia.org/wiki/Model_View_ViewModel) (or
-MVVM) and [ReactiveCocoa](https://github.com/ReactiveCocoa/ReactiveCocoa).
+ReactiveViewModel is a combination code/documentation project for building Cocoa
+applications using [Model-View-ViewModel](#model-view-viewmodel) and
+[ReactiveCocoa](#reactivecocoa).
+
+By documenting rationale and best practices, and providing
+reusable library components, we want to make MVVM _appealing_ and _easy_ for
+Objective-C applications.
+
+## Model-View-ViewModel
+
+Most Cocoa developers are familiar with the
+[Model-View-Controller](http://en.wikipedia.org/wiki/Model-View-Controller)
+(MVC) pattern:
+
+![Model-View-Controller](https://f.cloud.github.com/assets/432536/867929/2c54cf58-f758-11e2-90ad-4c65c4826576.png)
+
+**[Model-View-ViewModel](http://en.wikipedia.org/wiki/Model-View-ViewModel)
+(MVVM)** is another architectural paradigm for GUI applications:
+
+![Model-View-ViewModel](https://f.cloud.github.com/assets/432536/867930/2d9324e6-f758-11e2-9b97-d51fd53aa080.png)
+
+Although it seems similar to MVC (except with a "view model" object in place of
+the controller), there's one major difference — **the view owns the view
+model**. Unlike a controller, a view model has no knowledge of the specific view
+that's using it.
+
+This seemingly minor change offers huge benefits:
+
+ 1. **View models are testable.** Since they don't need a view to do their work,
+    presentation behavior can be tested without any UI automation or stubbing.
+ 1. **View models can be used like models.** If desired, view models can be
+    copied or serialized just like a domain model. This can be used to quickly
+    implement UI restoration and similar behaviors.
+ 1. **View models are (mostly) platform-agnostic.** Since the actual UI code
+    lives in the view, well-designed view models can be used on the iPhone,
+    iPad, and Mac, with only minor tweaking for each platform.
+ 1. **Views and view controllers are simpler.** Once the important logic is
+    moved elsewhere, views and VCs become dumb UI objects. This makes them
+    easier to understand and redesign.
+
+In short, replacing MVC with MVVM can lead to more versatile and rigorous UI
+code.
+
+### What's in a view model?
+
+A view model is like an [adapter](http://en.wikipedia.org/wiki/Adapter_pattern)
+for the model that makes it suitable for presentation. The view model is also
+where presentation _behavior_ goes.
+
+For example, a view model might handle:
+
+ * Kicking off network or database fetches
+ * Determining when information should be hidden or shown
+ * Date and number formatting
+ * Localization
+ * Acting upon the user's input
+
+However, the view model is _not_ responsible for actually presenting
+information or handling input — that's the sole domain of the view layer. When
+the view model needs to communicate something to the view, it does so through
+a system of [data binding](#reactivecocoa).
+
+### What about view controllers?
+
+OS X and iOS both have view (or window) controllers, which may be confusing at
+first glance, since MVVM only refers to a view.
+
+But upon closer inspection, it becomes apparent that view controllers are
+_actually just part of the view layer_, since they handle things like:
+
+ * Layout
+ * Animations
+ * Device rotation
+ * View and window transitions
+ * Presenting loaded UI
+
+So, "the view" actually means the view _layer_, which includes view controllers.
+There's no need to have a view and a view controller for the same section of the
+screen, though — just pick whichever class is easier for the use case.
+
+No matter whether you decide to use a view or a view controller, you'll still
+have a view model.
+
+## ReactiveCocoa
+
+MVVM is most successful with a powerful system of [data
+binding](http://en.wikipedia.org/wiki/UI_data_binding).
+[ReactiveCocoa](https://github.com/ReactiveCocoa/ReactiveCocoa) is one such
+system.
+
+By modeling changes as
+[signals](https://github.com/ReactiveCocoa/ReactiveCocoa#introduction), the view
+model can communicate to the view without actually needing to know that it
+exists (similarly for model → view model communication). This is also
+why view models can be tested without a view in place — the test simply needs to
+connect to the VM's signals and verify that the behavior is correct.
+
+ReactiveCocoa also includes other conveniences that are hugely beneficial for
+MVVM, like
+[commands](https://github.com/ReactiveCocoa/ReactiveCocoa/blob/master/Documentation/FrameworkOverview.md#commands),
+and built-in bindings for AppKit and UIKit.
+
+## More Resources
+
+Model-View-ViewModel was originally developed by
+[Microsoft](http://msdn.microsoft.com/en-us/library/gg430869(v=PandP.40).aspx),
+so many of the examples are specific to WPF or Silverlight, but there are still
+a few resources that may be useful:
+
+**Blog posts:**
+
+ * [Basic MVVM with ReactiveCocoa](http://cocoasamurai.blogspot.com/2013/03/basic-mvvm-with-reactivecocoa.html)
+ * [Presentation Model](http://martinfowler.com/eaaDev/PresentationModel.html)
+
+**Presentations:**
+
+ * [Code Reuse with MVVM](https://speakerdeck.com/jspahrsummers/code-reuse-with-mvvm)
