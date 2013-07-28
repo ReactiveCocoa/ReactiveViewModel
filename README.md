@@ -91,7 +91,7 @@ system.
 By modeling changes as
 [signals](https://github.com/ReactiveCocoa/ReactiveCocoa#introduction), the view
 model can communicate to the view without actually needing to know that it
-exists (similarly for model → view model communication). This is also
+exists (similarly for model → view model communication). This decoupling is
 why view models can be tested without a view in place — the test simply needs to
 connect to the VM's signals and verify that the behavior is correct.
 
