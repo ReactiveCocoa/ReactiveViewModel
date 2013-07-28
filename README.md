@@ -105,9 +105,8 @@ and built-in bindings for AppKit and UIKit.
 ## More Resources
 
 Model-View-ViewModel was originally developed by
-[Microsoft](http://msdn.microsoft.com/en-us/library/gg430869(v=PandP.40).aspx),
-so many of the examples are specific to WPF or Silverlight, but there are still
-a few resources that may be useful:
+[Microsoft](http://bit.ly/gQY00r), so many of the examples are specific to WPF
+or Silverlight, but there are still a few resources that may be useful:
 
 **Blog posts:**
 
