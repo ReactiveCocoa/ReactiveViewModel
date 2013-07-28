@@ -14,12 +14,12 @@ Most Cocoa developers are familiar with the
 [Model-View-Controller](http://en.wikipedia.org/wiki/Model-View-Controller)
 (MVC) pattern:
 
-![Model-View-Controller](https://f.cloud.github.com/assets/432536/867929/2c54cf58-f758-11e2-90ad-4c65c4826576.png)
+![Model-View-Controller](https://f.cloud.github.com/assets/432536/867983/280867ea-f760-11e2-9425-8d1345ffdfb9.png)
 
 **[Model-View-ViewModel](http://en.wikipedia.org/wiki/Model-View-ViewModel)
 (MVVM)** is another architectural paradigm for GUI applications:
 
-![Model-View-ViewModel](https://f.cloud.github.com/assets/432536/867930/2d9324e6-f758-11e2-9b97-d51fd53aa080.png)
+![Model-View-ViewModel](https://f.cloud.github.com/assets/432536/867984/291ed380-f760-11e2-9106-d3158320af39.png)
 
 Although it seems similar to MVC (except with a "view model" object in place of
 the controller), there's one major difference — **the view owns the view
