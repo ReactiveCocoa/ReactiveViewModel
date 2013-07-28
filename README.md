@@ -4,9 +4,8 @@ ReactiveViewModel is a combination code/documentation project for building Cocoa
 applications using [Model-View-ViewModel](#model-view-viewmodel) and
 [ReactiveCocoa](#reactivecocoa).
 
-By documenting rationale and best practices, and providing
-reusable library components, we want to make MVVM _appealing_ and _easy_ for
-Objective-C applications.
+By explaining rationale, documenting best practices, and providing reusable
+library components, we want to make MVVM in Objective-C appealing and easy.
 
 ## Model-View-ViewModel
 
