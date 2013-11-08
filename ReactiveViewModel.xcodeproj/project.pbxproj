@@ -38,6 +38,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		D0461453182D807E00EBB2F8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D0948ABE17815B3600BA8F23 /* ReactiveCocoa.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D05AD39417F2D56F0080895B;
+			remoteInfo = "ReactiveCocoa-Mac";
+		};
 		D0948A57178159AD00BA8F23 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D0948A32178159AD00BA8F23 /* Project object */;
@@ -442,6 +449,7 @@
 				D0948AD017815B3600BA8F23 /* ReactiveCocoaTests-iOS.octest */,
 				D0948AD217815B3600BA8F23 /* ReactiveCocoa-iOS-UIKitTestHost.app */,
 				D0948AD417815B3600BA8F23 /* ReactiveCocoa-iOS-UIKitTestHostTests.octest */,
+				D0461454182D807E00EBB2F8 /* libReactiveCocoa-Mac.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -527,7 +535,6 @@
 				D0948A4E178159AD00BA8F23 /* Sources */,
 				D0948A4F178159AD00BA8F23 /* Frameworks */,
 				D0948A50178159AD00BA8F23 /* Resources */,
-				D0948A51178159AD00BA8F23 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -566,7 +573,6 @@
 				D0948A97178159F900BA8F23 /* Sources */,
 				D0948A98178159F900BA8F23 /* Frameworks */,
 				D0948A99178159F900BA8F23 /* Resources */,
-				D0948A9A178159F900BA8F23 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -624,6 +630,13 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
+		D0461454182D807E00EBB2F8 /* libReactiveCocoa-Mac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libReactiveCocoa-Mac.a";
+			remoteRef = D0461453182D807E00EBB2F8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		D0948ACA17815B3600BA8F23 /* ReactiveCocoa.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
@@ -749,35 +762,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		D0948A51178159AD00BA8F23 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
-		};
-		D0948A9A178159F900BA8F23 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D0948A36178159AD00BA8F23 /* Sources */ = {
