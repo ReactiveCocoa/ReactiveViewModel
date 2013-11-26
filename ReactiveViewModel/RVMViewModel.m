@@ -103,24 +103,19 @@ static const NSTimeInterval RVMViewModelInactiveThrottleInterval = 1;
 	RACSignal *activeSignal = RACObserve(self, active);
 
 	return [[RACSignal
-		createSignal:^(id<RACSubscriber> subscriber) {
-			RACCompoundDisposable *disposable = [RACCompoundDisposable compoundDisposable];
-
-			__block RACDisposable *signalDisposable = nil;
+		create:^(id<RACSubscriber> subscriber) {
+			RACSerialDisposable *signalDisposable = [[RACSerialDisposable alloc] init];
+			[subscriber.disposable addDisposable:signalDisposable];
 
 			RACDisposable *activeDisposable = [activeSignal subscribeNext:^(NSNumber *active) {
 				if (active.boolValue) {
-					signalDisposable = [signal subscribeNext:^(id value) {
+					signalDisposable.disposable = [signal subscribeNext:^(id value) {
 						[subscriber sendNext:value];
 					} error:^(NSError *error) {
 						[subscriber sendError:error];
 					}];
-
-					if (signalDisposable != nil) [disposable addDisposable:signalDisposable];
 				} else {
-					[signalDisposable dispose];
-					[disposable removeDisposable:signalDisposable];
-					signalDisposable = nil;
+					[[signalDisposable swapInDisposable:nil] dispose];
 				}
 			} error:^(NSError *error) {
 				[subscriber sendError:error];
@@ -128,8 +123,7 @@ static const NSTimeInterval RVMViewModelInactiveThrottleInterval = 1;
 				[subscriber sendCompleted];
 			}];
 
-			if (activeDisposable != nil) [disposable addDisposable:activeDisposable];
-			return disposable;
+			[subscriber.disposable addDisposable:activeDisposable];
 		}]
 		setNameWithFormat:@"%@ -forwardSignalWhileActive: %@", self, signal];
 }
@@ -137,18 +131,24 @@ static const NSTimeInterval RVMViewModelInactiveThrottleInterval = 1;
 - (RACSignal *)throttleSignalWhileInactive:(RACSignal *)signal {
 	NSParameterAssert(signal != nil);
 
-	signal = [signal replayLast];
+	return [[[[RACSignal
+		combineLatest:@[
+			[RACObserve(self, active) materialize],
+			[signal materialize]
+		] reduce:^(RACEvent *activeEvent, RACEvent *signalEvent) {
+			if (activeEvent.finished) return [RACSignal return:activeEvent];
+			if (signalEvent.finished) return [RACSignal return:signalEvent];
 
-	return [[[[[RACObserve(self, active)
-		takeUntil:[signal ignoreValues]]
-		combineLatestWith:signal]
-		throttle:RVMViewModelInactiveThrottleInterval valuesPassingTest:^ BOOL (RACTuple *xs) {
-			BOOL active = [xs.first boolValue];
-			return !active;
+			NSNumber *active = activeEvent.value;
+			RACSignal *result = [RACSignal return:signalEvent];
+			if (!active.boolValue) {
+				result = [result delay:RVMViewModelInactiveThrottleInterval];
+			}
+
+			return result;
 		}]
-		reduceEach:^(NSNumber *active, id value) {
-			return value;
-		}]
+		flatten:1 withPolicy:RACSignalFlattenPolicyDisposeEarliest]
+		dematerialize]
 		setNameWithFormat:@"%@ -throttleSignalWhileInactive: %@", self, signal];
 }
 
