@@ -100,31 +100,12 @@ static const NSTimeInterval RVMViewModelInactiveThrottleInterval = 1;
 - (RACSignal *)forwardSignalWhileActive:(RACSignal *)signal {
 	NSParameterAssert(signal != nil);
 
-	RACSignal *activeSignal = RACObserve(self, active);
+	// Sends NO when the receiver is deallocated.
+	RACSignal *active = [RACObserve(self, active)
+		concat:[RACSignal return:@NO]];
 
 	return [[RACSignal
-		create:^(id<RACSubscriber> subscriber) {
-			RACSerialDisposable *signalDisposable = [[RACSerialDisposable alloc] init];
-			[subscriber.disposable addDisposable:signalDisposable];
-
-			RACDisposable *activeDisposable = [activeSignal subscribeNext:^(NSNumber *active) {
-				if (active.boolValue) {
-					signalDisposable.disposable = [signal subscribeNext:^(id value) {
-						[subscriber sendNext:value];
-					} error:^(NSError *error) {
-						[subscriber sendError:error];
-					}];
-				} else {
-					[[signalDisposable swapInDisposable:nil] dispose];
-				}
-			} error:^(NSError *error) {
-				[subscriber sendError:error];
-			} completed:^{
-				[subscriber sendCompleted];
-			}];
-
-			[subscriber.disposable addDisposable:activeDisposable];
-		}]
+		if:active then:signal else:[RACSignal empty]]
 		setNameWithFormat:@"%@ -forwardSignalWhileActive: %@", self, signal];
 }
 
