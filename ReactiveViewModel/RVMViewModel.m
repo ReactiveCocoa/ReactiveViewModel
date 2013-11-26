@@ -133,12 +133,18 @@ static const NSTimeInterval RVMViewModelInactiveThrottleInterval = 1;
 
 	return [[[[RACSignal
 		combineLatest:@[
+			// Materialize the input signals so that we can finish when either
+			// of them finish. (Normally, `completed` events aren't observable
+			// through +combineLatest: like this.)
 			[RACObserve(self, active) materialize],
 			[signal materialize]
 		] reduce:^(RACEvent *activeEvent, RACEvent *signalEvent) {
+			// Pass through termination events immediately.
 			if (activeEvent.finished) return [RACSignal return:activeEvent];
 			if (signalEvent.finished) return [RACSignal return:signalEvent];
 
+			// If both are `next` events, forward the value from `signal`,
+			// throttling it if we're inactive.
 			NSNumber *active = activeEvent.value;
 			RACSignal *result = [RACSignal return:signalEvent];
 			if (!active.boolValue) {
@@ -148,6 +154,7 @@ static const NSTimeInterval RVMViewModelInactiveThrottleInterval = 1;
 			return result;
 		}]
 		flatten:1 withPolicy:RACSignalFlattenPolicyDisposeEarliest]
+		// Unpack the actual signal events.
 		dematerialize]
 		setNameWithFormat:@"%@ -throttleSignalWhileInactive: %@", self, signal];
 }
