@@ -13,7 +13,7 @@ SpecBegin(RVMViewModel)
 __block RVMTestViewModel *viewModel;
 
 beforeEach(^{
-	viewModel = [[RVMTestViewModel alloc] initWithModel:@"foobar"];
+	viewModel = [[RVMTestViewModel alloc] init];
 });
 
 describe(@"active property", ^{
@@ -79,7 +79,7 @@ describe(@"active property", ^{
 			deallocated = NO;
 
 			createViewModel = ^{
-				RVMTestViewModel *viewModel = [[RVMTestViewModel alloc] initWithModel:nil];
+				RVMTestViewModel *viewModel = [[RVMTestViewModel alloc] init];
 				[viewModel.rac_deallocDisposable addDisposable:[RACDisposable disposableWithBlock:^{
 					deallocated = YES;
 				}]];
