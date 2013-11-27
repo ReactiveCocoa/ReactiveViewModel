@@ -80,21 +80,6 @@ static const NSTimeInterval RVMViewModelInactiveThrottleInterval = 1;
 	return _didBecomeInactiveSignal;
 }
 
-#pragma mark Lifecycle
-
-- (id)init {
-	return [self initWithModel:nil];
-}
-
-- (id)initWithModel:(id)model {
-	self = [super init];
-	if (self == nil) return nil;
-
-	_model = model;
-
-	return self;
-}
-
 #pragma mark Activation
 
 - (RACSignal *)forwardSignalWhileActive:(RACSignal *)signal {
