@@ -30,8 +30,10 @@ static const NSTimeInterval RVMViewModelInactiveThrottleInterval = 1;
 
 // We create many, many view models, so these properties need to be as lazy and
 // memory-conscious as possible.
-@synthesize didBecomeActiveSignal = _didBecomeActiveSignal;
+@synthesize didBecomeActiveSignal   = _didBecomeActiveSignal;
 @synthesize didBecomeInactiveSignal = _didBecomeInactiveSignal;
+
+@synthesize active                  = _active;
 
 - (void)setActive:(BOOL)active {
 	// Skip KVO notifications when the property hasn't actually changed. This is

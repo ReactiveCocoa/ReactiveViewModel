@@ -35,6 +35,8 @@
 		D4ACA4DA18DB97D000EBD899 /* libSpecta.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D4ACA4D918DB97D000EBD899 /* libSpecta.a */; };
 		D4ACA4DE18DB97DC00EBD899 /* libExpecta-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D4ACA4DD18DB97DC00EBD899 /* libExpecta-iOS.a */; };
 		D4ACA4DF18DB980500EBD899 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4ACA4D118DB97A000EBD899 /* ReactiveCocoa.framework */; };
+		F0BDE8F919199B7D00F6998F /* RVMViewModelReacting.h in Headers */ = {isa = PBXBuildFile; fileRef = F0BDE8F819199B7D00F6998F /* RVMViewModelReacting.h */; };
+		F0BDE8FA19199B7D00F6998F /* RVMViewModelReacting.h in Headers */ = {isa = PBXBuildFile; fileRef = F0BDE8F819199B7D00F6998F /* RVMViewModelReacting.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +99,7 @@
 		D4ACA4D718DB97BA00EBD899 /* libSpecta-iOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libSpecta-iOS.a"; path = "External/ReactiveCocoa/external/specta/build/Debug-iphoneos/libSpecta-iOS.a"; sourceTree = "<group>"; };
 		D4ACA4D918DB97D000EBD899 /* libSpecta.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSpecta.a; path = External/ReactiveCocoa/external/specta/build/Debug/libSpecta.a; sourceTree = "<group>"; };
 		D4ACA4DD18DB97DC00EBD899 /* libExpecta-iOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libExpecta-iOS.a"; path = "External/ReactiveCocoa/external/expecta/build/Debug-iphoneos/libExpecta-iOS.a"; sourceTree = "<group>"; };
+		F0BDE8F819199B7D00F6998F /* RVMViewModelReacting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RVMViewModelReacting.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,6 +193,7 @@
 			isa = PBXGroup;
 			children = (
 				D0948A4B178159AD00BA8F23 /* ReactiveViewModel.h */,
+				F0BDE8F719199B4600F6998F /* Protocol */,
 				D0948B4A178160FC00BA8F23 /* View Model */,
 				D0948A45178159AD00BA8F23 /* Supporting Files */,
 			);
@@ -308,6 +312,14 @@
 			name = "View Model";
 			sourceTree = "<group>";
 		};
+		F0BDE8F719199B4600F6998F /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				F0BDE8F819199B7D00F6998F /* RVMViewModelReacting.h */,
+			);
+			name = Protocol;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -316,6 +328,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0948ABA17815AF100BA8F23 /* ReactiveViewModel.h in Headers */,
+				F0BDE8F919199B7D00F6998F /* RVMViewModelReacting.h in Headers */,
 				D0948B551781610600BA8F23 /* RVMViewModel.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -325,6 +338,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0948ABB17815AF100BA8F23 /* ReactiveViewModel.h in Headers */,
+				F0BDE8FA19199B7D00F6998F /* RVMViewModelReacting.h in Headers */,
 				D0948B561781610600BA8F23 /* RVMViewModel.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
