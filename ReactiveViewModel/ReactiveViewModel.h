@@ -7,3 +7,4 @@
 //
 
 #import "RVMViewModel.h"
+#import "RVMViewModelReacting.h"
