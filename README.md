@@ -100,6 +100,10 @@ MVVM, like
 [commands](https://github.com/ReactiveCocoa/ReactiveCocoa/blob/master/Documentation/FrameworkOverview.md#commands),
 and built-in bindings for AppKit and UIKit.
 
+## Getting Started
+
+To build ReactiveViewModel in isolation, open `ReactiveViewModel.xcworkspace`. To integrate it into your project, include `ReactiveViewModel.xcodeproj` and `ReactiveCocoa.xcodeproj` and link your target against the ReactiveViewModel and ReactiveCocoa targets for your platform.
+
 ## More Resources
 
 Model-View-ViewModel was originally developed by

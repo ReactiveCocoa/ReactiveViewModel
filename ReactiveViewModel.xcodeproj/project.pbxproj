@@ -17,13 +17,6 @@
 		D0948AB817815ACD00BA8F23 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0948AB617815AC700BA8F23 /* Foundation.framework */; };
 		D0948ABA17815AF100BA8F23 /* ReactiveViewModel.h in Headers */ = {isa = PBXBuildFile; fileRef = D0948A4B178159AD00BA8F23 /* ReactiveViewModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D0948ABB17815AF100BA8F23 /* ReactiveViewModel.h in Headers */ = {isa = PBXBuildFile; fileRef = D0948A4B178159AD00BA8F23 /* ReactiveViewModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D0948AF517815B7200BA8F23 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0948ACA17815B3600BA8F23 /* ReactiveCocoa.framework */; };
-		D0948AF617815B7700BA8F23 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0948ACA17815B3600BA8F23 /* ReactiveCocoa.framework */; };
-		D0948AF917815B7E00BA8F23 /* libReactiveCocoa-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D0948ACC17815B3600BA8F23 /* libReactiveCocoa-iOS.a */; };
-		D0948B3317815E4B00BA8F23 /* libExpecta.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D0948AEC17815B4200BA8F23 /* libExpecta.a */; };
-		D0948B3417815E4B00BA8F23 /* libSpecta.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D0948ADD17815B3F00BA8F23 /* libSpecta.a */; };
-		D0948B3917815E5600BA8F23 /* libExpecta-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D0948AEE17815B4200BA8F23 /* libExpecta-iOS.a */; };
-		D0948B3A17815E5600BA8F23 /* libSpecta-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D0948ADF17815B3F00BA8F23 /* libSpecta-iOS.a */; };
 		D0948B3C17815E7300BA8F23 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0948B3B17815E7300BA8F23 /* SenTestingKit.framework */; };
 		D0948B3D17815E7800BA8F23 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0948B3B17815E7300BA8F23 /* SenTestingKit.framework */; };
 		D0948B3F17815E9700BA8F23 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0948B3E17815E9700BA8F23 /* UIKit.framework */; };
@@ -35,16 +28,16 @@
 		D0948B5B1781618A00BA8F23 /* RVMViewModelSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = D0948B591781618A00BA8F23 /* RVMViewModelSpec.m */; };
 		D0948B5E178161A800BA8F23 /* RVMTestViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D0948B5D178161A800BA8F23 /* RVMTestViewModel.m */; };
 		D0948B5F178161A800BA8F23 /* RVMTestViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D0948B5D178161A800BA8F23 /* RVMTestViewModel.m */; };
+		D4ACA4D218DB97A000EBD899 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4ACA4D118DB97A000EBD899 /* ReactiveCocoa.framework */; };
+		D4ACA4D418DB97A600EBD899 /* libReactiveCocoa-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D4ACA4D318DB97A600EBD899 /* libReactiveCocoa-iOS.a */; };
+		D4ACA4D618DB97B500EBD899 /* libExpecta.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D4ACA4D518DB97B500EBD899 /* libExpecta.a */; };
+		D4ACA4D818DB97BA00EBD899 /* libSpecta-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D4ACA4D718DB97BA00EBD899 /* libSpecta-iOS.a */; };
+		D4ACA4DA18DB97D000EBD899 /* libSpecta.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D4ACA4D918DB97D000EBD899 /* libSpecta.a */; };
+		D4ACA4DE18DB97DC00EBD899 /* libExpecta-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D4ACA4DD18DB97DC00EBD899 /* libExpecta-iOS.a */; };
+		D4ACA4DF18DB980500EBD899 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4ACA4D118DB97A000EBD899 /* ReactiveCocoa.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		D0461453182D807E00EBB2F8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D0948ABE17815B3600BA8F23 /* ReactiveCocoa.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = D05AD39417F2D56F0080895B;
-			remoteInfo = "ReactiveCocoa-Mac";
-		};
 		D0948A57178159AD00BA8F23 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D0948A32178159AD00BA8F23 /* Project object */;
@@ -58,146 +51,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = D0948A8C178159F900BA8F23;
 			remoteInfo = ReactiveViewModel;
-		};
-		D0948AC917815B3600BA8F23 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D0948ABE17815B3600BA8F23 /* ReactiveCocoa.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 88037F8315056328001A5B19;
-			remoteInfo = ReactiveCocoa;
-		};
-		D0948ACB17815B3600BA8F23 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D0948ABE17815B3600BA8F23 /* ReactiveCocoa.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 88F440AB153DAC820097B4C3;
-			remoteInfo = "ReactiveCocoa-iOS";
-		};
-		D0948ACD17815B3600BA8F23 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D0948ABE17815B3600BA8F23 /* ReactiveCocoa.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 88CDF7DC15000FCF00163A9F;
-			remoteInfo = ReactiveCocoaTests;
-		};
-		D0948ACF17815B3600BA8F23 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D0948ABE17815B3600BA8F23 /* ReactiveCocoa.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 5FAF5223174D4C2000CAC810;
-			remoteInfo = "ReactiveCocoaTests-iOS";
-		};
-		D0948AD117815B3600BA8F23 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D0948ABE17815B3600BA8F23 /* ReactiveCocoa.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 1860F412177C91B500C7B3C9;
-			remoteInfo = "ReactiveCocoa-iOS-UIKitTestHost";
-		};
-		D0948AD317815B3600BA8F23 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D0948ABE17815B3600BA8F23 /* ReactiveCocoa.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 1860F430177C91B500C7B3C9;
-			remoteInfo = "ReactiveCocoa-iOS-UIKitTestHostTests";
-		};
-		D0948ADC17815B3F00BA8F23 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D0948AD517815B3F00BA8F23 /* Specta.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = E9D96A2614B6B8AB007D9521;
-			remoteInfo = Specta;
-		};
-		D0948ADE17815B3F00BA8F23 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D0948AD517815B3F00BA8F23 /* Specta.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = E9B777A414BA294B00D8DC76;
-			remoteInfo = "Specta-iOS";
-		};
-		D0948AE017815B3F00BA8F23 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D0948AD517815B3F00BA8F23 /* Specta.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = E9D96A3A14B6B8AB007D9521;
-			remoteInfo = SpectaTests;
-		};
-		D0948AE217815B3F00BA8F23 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D0948AD517815B3F00BA8F23 /* Specta.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = E9B777B314BA294C00D8DC76;
-			remoteInfo = "Specta-iOSTests";
-		};
-		D0948AEB17815B4200BA8F23 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D0948AE417815B4200BA8F23 /* Expecta.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = E9ACDF0C13B2DD520010F4D7;
-			remoteInfo = Expecta;
-		};
-		D0948AED17815B4200BA8F23 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D0948AE417815B4200BA8F23 /* Expecta.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = E93067CE13B2E6D100EA26FF;
-			remoteInfo = "Expecta-iOS";
-		};
-		D0948AEF17815B4200BA8F23 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D0948AE417815B4200BA8F23 /* Expecta.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = E9ACDF1D13B2DD520010F4D7;
-			remoteInfo = ExpectaTests;
-		};
-		D0948AF117815B4200BA8F23 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D0948AE417815B4200BA8F23 /* Expecta.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = E93067DA13B2E6D100EA26FF;
-			remoteInfo = "Expecta-iOSTests";
-		};
-		D0948AF317815B7000BA8F23 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D0948ABE17815B3600BA8F23 /* ReactiveCocoa.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 88037F8215056328001A5B19;
-			remoteInfo = ReactiveCocoa;
-		};
-		D0948AF717815B7B00BA8F23 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D0948ABE17815B3600BA8F23 /* ReactiveCocoa.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 88F440AA153DAC820097B4C3;
-			remoteInfo = "ReactiveCocoa-iOS";
-		};
-		D0948B2317815E4600BA8F23 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D0948AE417815B4200BA8F23 /* Expecta.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = E9ACDF0B13B2DD520010F4D7;
-			remoteInfo = Expecta;
-		};
-		D0948B2517815E4600BA8F23 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D0948AD517815B3F00BA8F23 /* Specta.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = E9D96A2514B6B8AB007D9521;
-			remoteInfo = Specta;
-		};
-		D0948B3517815E5200BA8F23 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D0948AE417815B4200BA8F23 /* Expecta.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = E93067CD13B2E6D100EA26FF;
-			remoteInfo = "Expecta-iOS";
-		};
-		D0948B3717815E5200BA8F23 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D0948AD517815B3F00BA8F23 /* Specta.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = E9B777A314BA294B00D8DC76;
-			remoteInfo = "Specta-iOS";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -231,9 +84,6 @@
 		D0948AB317815ABD00BA8F23 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		D0948AB617815AC700BA8F23 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		D0948ABC17815B1800BA8F23 /* ReactiveViewModelTests-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ReactiveViewModelTests-Prefix.pch"; sourceTree = "<group>"; };
-		D0948ABE17815B3600BA8F23 /* ReactiveCocoa.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ReactiveCocoa.xcodeproj; path = External/ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa.xcodeproj; sourceTree = "<group>"; };
-		D0948AD517815B3F00BA8F23 /* Specta.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Specta.xcodeproj; path = External/ReactiveCocoa/external/specta/Specta.xcodeproj; sourceTree = "<group>"; };
-		D0948AE417815B4200BA8F23 /* Expecta.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Expecta.xcodeproj; path = External/ReactiveCocoa/external/expecta/Expecta.xcodeproj; sourceTree = "<group>"; };
 		D0948B3B17815E7300BA8F23 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		D0948B3E17815E9700BA8F23 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		D0948B531781610600BA8F23 /* RVMViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RVMViewModel.h; sourceTree = "<group>"; };
@@ -241,6 +91,12 @@
 		D0948B591781618A00BA8F23 /* RVMViewModelSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RVMViewModelSpec.m; sourceTree = "<group>"; };
 		D0948B5C178161A800BA8F23 /* RVMTestViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RVMTestViewModel.h; sourceTree = "<group>"; };
 		D0948B5D178161A800BA8F23 /* RVMTestViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RVMTestViewModel.m; sourceTree = "<group>"; };
+		D4ACA4D118DB97A000EBD899 /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = External/ReactiveCocoa/ReactiveCocoaFramework/build/Debug/ReactiveCocoa.framework; sourceTree = "<group>"; };
+		D4ACA4D318DB97A600EBD899 /* libReactiveCocoa-iOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libReactiveCocoa-iOS.a"; path = "External/ReactiveCocoa/ReactiveCocoaFramework/build/Debug-iphoneos/libReactiveCocoa-iOS.a"; sourceTree = "<group>"; };
+		D4ACA4D518DB97B500EBD899 /* libExpecta.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libExpecta.a; path = External/ReactiveCocoa/external/expecta/build/Debug/libExpecta.a; sourceTree = "<group>"; };
+		D4ACA4D718DB97BA00EBD899 /* libSpecta-iOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libSpecta-iOS.a"; path = "External/ReactiveCocoa/external/specta/build/Debug-iphoneos/libSpecta-iOS.a"; sourceTree = "<group>"; };
+		D4ACA4D918DB97D000EBD899 /* libSpecta.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSpecta.a; path = External/ReactiveCocoa/external/specta/build/Debug/libSpecta.a; sourceTree = "<group>"; };
+		D4ACA4DD18DB97DC00EBD899 /* libExpecta-iOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libExpecta-iOS.a"; path = "External/ReactiveCocoa/external/expecta/build/Debug-iphoneos/libExpecta-iOS.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -248,8 +104,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0948AF517815B7200BA8F23 /* ReactiveCocoa.framework in Frameworks */,
 				D0948AB417815ABD00BA8F23 /* Foundation.framework in Frameworks */,
+				D4ACA4D218DB97A000EBD899 /* ReactiveCocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,11 +114,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0948B3D17815E7800BA8F23 /* SenTestingKit.framework in Frameworks */,
-				D0948B3317815E4B00BA8F23 /* libExpecta.a in Frameworks */,
-				D0948B3417815E4B00BA8F23 /* libSpecta.a in Frameworks */,
-				D0948AF617815B7700BA8F23 /* ReactiveCocoa.framework in Frameworks */,
 				D0948A59178159AD00BA8F23 /* ReactiveViewModel.framework in Frameworks */,
+				D4ACA4DF18DB980500EBD899 /* ReactiveCocoa.framework in Frameworks */,
 				D0948AB517815AC200BA8F23 /* Foundation.framework in Frameworks */,
+				D4ACA4D618DB97B500EBD899 /* libExpecta.a in Frameworks */,
+				D4ACA4DA18DB97D000EBD899 /* libSpecta.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,6 +127,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0948AB717815AC700BA8F23 /* Foundation.framework in Frameworks */,
+				D4ACA4D418DB97A600EBD899 /* libReactiveCocoa-iOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,11 +137,10 @@
 			files = (
 				D0948B3F17815E9700BA8F23 /* UIKit.framework in Frameworks */,
 				D0948B3C17815E7300BA8F23 /* SenTestingKit.framework in Frameworks */,
-				D0948B3917815E5600BA8F23 /* libExpecta-iOS.a in Frameworks */,
-				D0948B3A17815E5600BA8F23 /* libSpecta-iOS.a in Frameworks */,
-				D0948AF917815B7E00BA8F23 /* libReactiveCocoa-iOS.a in Frameworks */,
 				D0948AB817815ACD00BA8F23 /* Foundation.framework in Frameworks */,
 				D0948AA3178159F900BA8F23 /* libReactiveViewModel.a in Frameworks */,
+				D4ACA4D818DB97BA00EBD899 /* libSpecta-iOS.a in Frameworks */,
+				D4ACA4DE18DB97DC00EBD899 /* libExpecta-iOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,9 +172,12 @@
 		D0948A3D178159AD00BA8F23 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D0948AE417815B4200BA8F23 /* Expecta.xcodeproj */,
-				D0948ABE17815B3600BA8F23 /* ReactiveCocoa.xcodeproj */,
-				D0948AD517815B3F00BA8F23 /* Specta.xcodeproj */,
+				D4ACA4D918DB97D000EBD899 /* libSpecta.a */,
+				D4ACA4D718DB97BA00EBD899 /* libSpecta-iOS.a */,
+				D4ACA4D518DB97B500EBD899 /* libExpecta.a */,
+				D4ACA4DD18DB97DC00EBD899 /* libExpecta-iOS.a */,
+				D4ACA4D118DB97A000EBD899 /* ReactiveCocoa.framework */,
+				D4ACA4D318DB97A600EBD899 /* libReactiveCocoa-iOS.a */,
 				D0948AB617815AC700BA8F23 /* Foundation.framework */,
 				D0948AB317815ABD00BA8F23 /* Foundation.framework */,
 				D0948B3B17815E7300BA8F23 /* SenTestingKit.framework */,
@@ -440,42 +299,6 @@
 			name = Specs;
 			sourceTree = "<group>";
 		};
-		D0948ABF17815B3600BA8F23 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				D0948ACA17815B3600BA8F23 /* ReactiveCocoa.framework */,
-				D0948ACC17815B3600BA8F23 /* libReactiveCocoa-iOS.a */,
-				D0948ACE17815B3600BA8F23 /* ReactiveCocoaTests.octest */,
-				D0948AD017815B3600BA8F23 /* ReactiveCocoaTests-iOS.octest */,
-				D0948AD217815B3600BA8F23 /* ReactiveCocoa-iOS-UIKitTestHost.app */,
-				D0948AD417815B3600BA8F23 /* ReactiveCocoa-iOS-UIKitTestHostTests.octest */,
-				D0461454182D807E00EBB2F8 /* libReactiveCocoa-Mac.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		D0948AD617815B3F00BA8F23 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				D0948ADD17815B3F00BA8F23 /* libSpecta.a */,
-				D0948ADF17815B3F00BA8F23 /* libSpecta-iOS.a */,
-				D0948AE117815B3F00BA8F23 /* SpectaTests.octest */,
-				D0948AE317815B3F00BA8F23 /* Specta-iOSTests.octest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		D0948AE517815B4200BA8F23 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				D0948AEC17815B4200BA8F23 /* libExpecta.a */,
-				D0948AEE17815B4200BA8F23 /* libExpecta-iOS.a */,
-				D0948AF017815B4200BA8F23 /* ExpectaTests.octest */,
-				D0948AF217815B4200BA8F23 /* Expecta-iOSTests.octest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		D0948B4A178160FC00BA8F23 /* View Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -521,7 +344,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				D0948AF417815B7000BA8F23 /* PBXTargetDependency */,
 			);
 			name = "ReactiveViewModel Mac";
 			productName = ReactiveViewModel;
@@ -539,8 +361,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				D0948B2417815E4600BA8F23 /* PBXTargetDependency */,
-				D0948B2617815E4600BA8F23 /* PBXTargetDependency */,
 				D0948A58178159AD00BA8F23 /* PBXTargetDependency */,
 			);
 			name = "ReactiveViewModel Mac Tests";
@@ -559,7 +379,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				D0948AF817815B7B00BA8F23 /* PBXTargetDependency */,
 			);
 			name = "ReactiveViewModel iOS";
 			productName = ReactiveViewModel;
@@ -577,8 +396,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				D0948B3617815E5200BA8F23 /* PBXTargetDependency */,
-				D0948B3817815E5200BA8F23 /* PBXTargetDependency */,
 				D0948AA2178159F900BA8F23 /* PBXTargetDependency */,
 			);
 			name = "ReactiveViewModel iOS Tests";
@@ -605,20 +422,6 @@
 			mainGroup = D0948A31178159AD00BA8F23;
 			productRefGroup = D0948A3C178159AD00BA8F23 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = D0948AE517815B4200BA8F23 /* Products */;
-					ProjectRef = D0948AE417815B4200BA8F23 /* Expecta.xcodeproj */;
-				},
-				{
-					ProductGroup = D0948ABF17815B3600BA8F23 /* Products */;
-					ProjectRef = D0948ABE17815B3600BA8F23 /* ReactiveCocoa.xcodeproj */;
-				},
-				{
-					ProductGroup = D0948AD617815B3F00BA8F23 /* Products */;
-					ProjectRef = D0948AD517815B3F00BA8F23 /* Specta.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				D0948A3A178159AD00BA8F23 /* ReactiveViewModel Mac */,
@@ -628,114 +431,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		D0461454182D807E00EBB2F8 /* libReactiveCocoa-Mac.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = "libReactiveCocoa-Mac.a";
-			remoteRef = D0461453182D807E00EBB2F8 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		D0948ACA17815B3600BA8F23 /* ReactiveCocoa.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = ReactiveCocoa.framework;
-			remoteRef = D0948AC917815B3600BA8F23 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		D0948ACC17815B3600BA8F23 /* libReactiveCocoa-iOS.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = "libReactiveCocoa-iOS.a";
-			remoteRef = D0948ACB17815B3600BA8F23 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		D0948ACE17815B3600BA8F23 /* ReactiveCocoaTests.octest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = ReactiveCocoaTests.octest;
-			remoteRef = D0948ACD17815B3600BA8F23 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		D0948AD017815B3600BA8F23 /* ReactiveCocoaTests-iOS.octest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "ReactiveCocoaTests-iOS.octest";
-			remoteRef = D0948ACF17815B3600BA8F23 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		D0948AD217815B3600BA8F23 /* ReactiveCocoa-iOS-UIKitTestHost.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = "ReactiveCocoa-iOS-UIKitTestHost.app";
-			remoteRef = D0948AD117815B3600BA8F23 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		D0948AD417815B3600BA8F23 /* ReactiveCocoa-iOS-UIKitTestHostTests.octest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "ReactiveCocoa-iOS-UIKitTestHostTests.octest";
-			remoteRef = D0948AD317815B3600BA8F23 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		D0948ADD17815B3F00BA8F23 /* libSpecta.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libSpecta.a;
-			remoteRef = D0948ADC17815B3F00BA8F23 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		D0948ADF17815B3F00BA8F23 /* libSpecta-iOS.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = "libSpecta-iOS.a";
-			remoteRef = D0948ADE17815B3F00BA8F23 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		D0948AE117815B3F00BA8F23 /* SpectaTests.octest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = SpectaTests.octest;
-			remoteRef = D0948AE017815B3F00BA8F23 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		D0948AE317815B3F00BA8F23 /* Specta-iOSTests.octest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "Specta-iOSTests.octest";
-			remoteRef = D0948AE217815B3F00BA8F23 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		D0948AEC17815B4200BA8F23 /* libExpecta.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libExpecta.a;
-			remoteRef = D0948AEB17815B4200BA8F23 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		D0948AEE17815B4200BA8F23 /* libExpecta-iOS.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = "libExpecta-iOS.a";
-			remoteRef = D0948AED17815B4200BA8F23 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		D0948AF017815B4200BA8F23 /* ExpectaTests.octest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = ExpectaTests.octest;
-			remoteRef = D0948AEF17815B4200BA8F23 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		D0948AF217815B4200BA8F23 /* Expecta-iOSTests.octest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "Expecta-iOSTests.octest";
-			remoteRef = D0948AF117815B4200BA8F23 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		D0948A39178159AD00BA8F23 /* Resources */ = {
@@ -810,36 +505,6 @@
 			isa = PBXTargetDependency;
 			target = D0948A8C178159F900BA8F23 /* ReactiveViewModel iOS */;
 			targetProxy = D0948AA1178159F900BA8F23 /* PBXContainerItemProxy */;
-		};
-		D0948AF417815B7000BA8F23 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = ReactiveCocoa;
-			targetProxy = D0948AF317815B7000BA8F23 /* PBXContainerItemProxy */;
-		};
-		D0948AF817815B7B00BA8F23 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "ReactiveCocoa-iOS";
-			targetProxy = D0948AF717815B7B00BA8F23 /* PBXContainerItemProxy */;
-		};
-		D0948B2417815E4600BA8F23 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Expecta;
-			targetProxy = D0948B2317815E4600BA8F23 /* PBXContainerItemProxy */;
-		};
-		D0948B2617815E4600BA8F23 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Specta;
-			targetProxy = D0948B2517815E4600BA8F23 /* PBXContainerItemProxy */;
-		};
-		D0948B3617815E5200BA8F23 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Expecta-iOS";
-			targetProxy = D0948B3517815E5200BA8F23 /* PBXContainerItemProxy */;
-		};
-		D0948B3817815E5200BA8F23 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Specta-iOS";
-			targetProxy = D0948B3717815E5200BA8F23 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
