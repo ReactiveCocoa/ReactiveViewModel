@@ -3,9 +3,23 @@
    LastUpgradeVersion = "0510"
    version = "1.3">
    <BuildAction
-      parallelizeBuildables = "YES"
+      parallelizeBuildables = "NO"
       buildImplicitDependencies = "YES">
       <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "88F440AA153DAC820097B4C3"
+               BuildableName = "libReactiveCocoa-iOS.a"
+               BlueprintName = "ReactiveCocoa-iOS"
+               ReferencedContainer = "container:External/ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
          <BuildActionEntry
             buildForTesting = "YES"
             buildForRunning = "YES"
