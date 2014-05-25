@@ -28,8 +28,8 @@
 		D0948B5B1781618A00BA8F23 /* RVMViewModelSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = D0948B591781618A00BA8F23 /* RVMViewModelSpec.m */; };
 		D0948B5E178161A800BA8F23 /* RVMTestViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D0948B5D178161A800BA8F23 /* RVMTestViewModel.m */; };
 		D0948B5F178161A800BA8F23 /* RVMTestViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D0948B5D178161A800BA8F23 /* RVMTestViewModel.m */; };
+		D09CC2511932A3D8003FCB80 /* libReactiveCocoa-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D09CC2501932A3D8003FCB80 /* libReactiveCocoa-iOS.a */; };
 		D4ACA4D218DB97A000EBD899 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4ACA4D118DB97A000EBD899 /* ReactiveCocoa.framework */; };
-		D4ACA4D418DB97A600EBD899 /* libReactiveCocoa-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D4ACA4D318DB97A600EBD899 /* libReactiveCocoa-iOS.a */; };
 		D4ACA4D618DB97B500EBD899 /* libExpecta.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D4ACA4D518DB97B500EBD899 /* libExpecta.a */; };
 		D4ACA4D818DB97BA00EBD899 /* libSpecta-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D4ACA4D718DB97BA00EBD899 /* libSpecta-iOS.a */; };
 		D4ACA4DA18DB97D000EBD899 /* libSpecta.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D4ACA4D918DB97D000EBD899 /* libSpecta.a */; };
@@ -91,6 +91,7 @@
 		D0948B591781618A00BA8F23 /* RVMViewModelSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RVMViewModelSpec.m; sourceTree = "<group>"; };
 		D0948B5C178161A800BA8F23 /* RVMTestViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RVMTestViewModel.h; sourceTree = "<group>"; };
 		D0948B5D178161A800BA8F23 /* RVMTestViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RVMTestViewModel.m; sourceTree = "<group>"; };
+		D09CC2501932A3D8003FCB80 /* libReactiveCocoa-iOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libReactiveCocoa-iOS.a"; path = "External/ReactiveCocoa/ReactiveCocoaFramework/build/Debug-iphoneos/libReactiveCocoa-iOS.a"; sourceTree = "<group>"; };
 		D4ACA4D118DB97A000EBD899 /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = External/ReactiveCocoa/ReactiveCocoaFramework/build/Debug/ReactiveCocoa.framework; sourceTree = "<group>"; };
 		D4ACA4D318DB97A600EBD899 /* libReactiveCocoa-iOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libReactiveCocoa-iOS.a"; path = "External/ReactiveCocoa/ReactiveCocoaFramework/build/Debug-iphoneos/libReactiveCocoa-iOS.a"; sourceTree = "<group>"; };
 		D4ACA4D518DB97B500EBD899 /* libExpecta.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libExpecta.a; path = External/ReactiveCocoa/external/expecta/build/Debug/libExpecta.a; sourceTree = "<group>"; };
@@ -127,7 +128,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0948AB717815AC700BA8F23 /* Foundation.framework in Frameworks */,
-				D4ACA4D418DB97A600EBD899 /* libReactiveCocoa-iOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,6 +135,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D09CC2511932A3D8003FCB80 /* libReactiveCocoa-iOS.a in Frameworks */,
 				D0948B3F17815E9700BA8F23 /* UIKit.framework in Frameworks */,
 				D0948B3C17815E7300BA8F23 /* SenTestingKit.framework in Frameworks */,
 				D0948AB817815ACD00BA8F23 /* Foundation.framework in Frameworks */,
@@ -172,6 +173,7 @@
 		D0948A3D178159AD00BA8F23 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D09CC2501932A3D8003FCB80 /* libReactiveCocoa-iOS.a */,
 				D4ACA4D918DB97D000EBD899 /* libSpecta.a */,
 				D4ACA4D718DB97BA00EBD899 /* libSpecta-iOS.a */,
 				D4ACA4D518DB97B500EBD899 /* libExpecta.a */,

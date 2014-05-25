@@ -97,12 +97,7 @@ describe(@"active property", ^{
 		it(@"should forward a signal", ^{
 			@autoreleasepool {
 				RVMTestViewModel *viewModel __attribute__((objc_precise_lifetime)) = createViewModel();
-
-				RACSignal *input = [RACSignal createSignal:^ id (id<RACSubscriber> subscriber) {
-					[subscriber sendNext:@1];
-					[subscriber sendNext:@2];
-					return nil;
-				}];
+				RACSignal *input = @[ @1, @2 ].rac_signal;
 
 				[[viewModel
 					forwardSignalWhileActive:input]

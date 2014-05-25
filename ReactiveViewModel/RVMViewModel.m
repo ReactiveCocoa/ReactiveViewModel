@@ -85,55 +85,43 @@ static const NSTimeInterval RVMViewModelInactiveThrottleInterval = 1;
 - (RACSignal *)forwardSignalWhileActive:(RACSignal *)signal {
 	NSParameterAssert(signal != nil);
 
-	RACSignal *activeSignal = RACObserve(self, active);
+	// Sends NO when the receiver is deallocated.
+	RACSignal *active = [RACObserve(self, active)
+		concat:[RACSignal return:@NO]];
 
 	return [[RACSignal
-		createSignal:^(id<RACSubscriber> subscriber) {
-			RACCompoundDisposable *disposable = [RACCompoundDisposable compoundDisposable];
-
-			__block RACDisposable *signalDisposable = nil;
-
-			RACDisposable *activeDisposable = [activeSignal subscribeNext:^(NSNumber *active) {
-				if (active.boolValue) {
-					signalDisposable = [signal subscribeNext:^(id value) {
-						[subscriber sendNext:value];
-					} error:^(NSError *error) {
-						[subscriber sendError:error];
-					}];
-
-					if (signalDisposable != nil) [disposable addDisposable:signalDisposable];
-				} else {
-					[signalDisposable dispose];
-					[disposable removeDisposable:signalDisposable];
-					signalDisposable = nil;
-				}
-			} error:^(NSError *error) {
-				[subscriber sendError:error];
-			} completed:^{
-				[subscriber sendCompleted];
-			}];
-
-			if (activeDisposable != nil) [disposable addDisposable:activeDisposable];
-			return disposable;
-		}]
+		if:active then:signal else:[RACSignal empty]]
 		setNameWithFormat:@"%@ -forwardSignalWhileActive: %@", self, signal];
 }
 
 - (RACSignal *)throttleSignalWhileInactive:(RACSignal *)signal {
 	NSParameterAssert(signal != nil);
 
-	signal = [signal replayLast];
+	return [[[[RACSignal
+		combineLatest:@[
+			// Materialize the input signals so that we can finish when either
+			// of them finish. (Normally, `completed` events aren't observable
+			// through +combineLatest: like this.)
+			[RACObserve(self, active) materialize],
+			[signal materialize]
+		] reduce:^(RACEvent *activeEvent, RACEvent *signalEvent) {
+			// Pass through termination events immediately.
+			if (activeEvent.finished) return [RACSignal return:activeEvent];
+			if (signalEvent.finished) return [RACSignal return:signalEvent];
 
-	return [[[[[RACObserve(self, active)
-		takeUntil:[signal ignoreValues]]
-		combineLatestWith:signal]
-		throttle:RVMViewModelInactiveThrottleInterval valuesPassingTest:^ BOOL (RACTuple *xs) {
-			BOOL active = [xs.first boolValue];
-			return !active;
+			// If both are `next` events, forward the value from `signal`,
+			// throttling it if we're inactive.
+			NSNumber *active = activeEvent.value;
+			RACSignal *result = [RACSignal return:signalEvent];
+			if (!active.boolValue) {
+				result = [result delay:RVMViewModelInactiveThrottleInterval];
+			}
+
+			return result;
 		}]
-		reduceEach:^(NSNumber *active, id value) {
-			return value;
-		}]
+		flatten:1 withPolicy:RACSignalFlattenPolicyDisposeEarliest]
+		// Unpack the actual signal events.
+		dematerialize]
 		setNameWithFormat:@"%@ -throttleSignalWhileInactive: %@", self, signal];
 }
 
