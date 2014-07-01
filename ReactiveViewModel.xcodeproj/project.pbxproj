@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BEB7DA4419634C4700F69C4F /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEB7DA4219634B5A00F69C4F /* XCTest.framework */; };
+		BEB7DA491963536900F69C4F /* libSpecta-OSX.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BEB7DA481963536900F69C4F /* libSpecta-OSX.a */; };
 		D0948A49178159AD00BA8F23 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D0948A47178159AD00BA8F23 /* InfoPlist.strings */; };
 		D0948A59178159AD00BA8F23 /* ReactiveViewModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0948A3B178159AD00BA8F23 /* ReactiveViewModel.framework */; };
 		D0948A5F178159AD00BA8F23 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D0948A5D178159AD00BA8F23 /* InfoPlist.strings */; };
@@ -17,8 +19,6 @@
 		D0948AB817815ACD00BA8F23 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0948AB617815AC700BA8F23 /* Foundation.framework */; };
 		D0948ABA17815AF100BA8F23 /* ReactiveViewModel.h in Headers */ = {isa = PBXBuildFile; fileRef = D0948A4B178159AD00BA8F23 /* ReactiveViewModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D0948ABB17815AF100BA8F23 /* ReactiveViewModel.h in Headers */ = {isa = PBXBuildFile; fileRef = D0948A4B178159AD00BA8F23 /* ReactiveViewModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D0948B3C17815E7300BA8F23 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0948B3B17815E7300BA8F23 /* SenTestingKit.framework */; };
-		D0948B3D17815E7800BA8F23 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0948B3B17815E7300BA8F23 /* SenTestingKit.framework */; };
 		D0948B3F17815E9700BA8F23 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0948B3E17815E9700BA8F23 /* UIKit.framework */; };
 		D0948B551781610600BA8F23 /* RVMViewModel.h in Headers */ = {isa = PBXBuildFile; fileRef = D0948B531781610600BA8F23 /* RVMViewModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D0948B561781610600BA8F23 /* RVMViewModel.h in Headers */ = {isa = PBXBuildFile; fileRef = D0948B531781610600BA8F23 /* RVMViewModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -32,7 +32,6 @@
 		D4ACA4D418DB97A600EBD899 /* libReactiveCocoa-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D4ACA4D318DB97A600EBD899 /* libReactiveCocoa-iOS.a */; };
 		D4ACA4D618DB97B500EBD899 /* libExpecta.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D4ACA4D518DB97B500EBD899 /* libExpecta.a */; };
 		D4ACA4D818DB97BA00EBD899 /* libSpecta-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D4ACA4D718DB97BA00EBD899 /* libSpecta-iOS.a */; };
-		D4ACA4DA18DB97D000EBD899 /* libSpecta.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D4ACA4D918DB97D000EBD899 /* libSpecta.a */; };
 		D4ACA4DE18DB97DC00EBD899 /* libExpecta-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D4ACA4DD18DB97DC00EBD899 /* libExpecta-iOS.a */; };
 		D4ACA4DF18DB980500EBD899 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4ACA4D118DB97A000EBD899 /* ReactiveCocoa.framework */; };
 /* End PBXBuildFile section */
@@ -55,12 +54,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BEB7DA4219634B5A00F69C4F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		BEB7DA481963536900F69C4F /* libSpecta-OSX.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libSpecta-OSX.a"; path = "External/ReactiveCocoa/external/specta/build/Debug/libSpecta-OSX.a"; sourceTree = "<group>"; };
 		D0948A3B178159AD00BA8F23 /* ReactiveViewModel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ReactiveViewModel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0948A46178159AD00BA8F23 /* ReactiveViewModel-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ReactiveViewModel-Info.plist"; sourceTree = "<group>"; };
 		D0948A48178159AD00BA8F23 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D0948A4A178159AD00BA8F23 /* ReactiveViewModel-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ReactiveViewModel-Prefix.pch"; sourceTree = "<group>"; };
 		D0948A4B178159AD00BA8F23 /* ReactiveViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReactiveViewModel.h; sourceTree = "<group>"; };
-		D0948A53178159AD00BA8F23 /* ReactiveViewModel Mac Tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ReactiveViewModel Mac Tests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0948A53178159AD00BA8F23 /* ReactiveViewModel Mac Tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "ReactiveViewModel Mac Tests.octest"; path = "ReactiveViewModel Mac Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0948A5C178159AD00BA8F23 /* ReactiveViewModelTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ReactiveViewModelTests-Info.plist"; sourceTree = "<group>"; };
 		D0948A5E178159AD00BA8F23 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D0948A75178159DA00BA8F23 /* Common.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Common.xcconfig; sourceTree = "<group>"; };
@@ -80,11 +81,10 @@
 		D0948A87178159DA00BA8F23 /* Mac-StaticLibrary.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Mac-StaticLibrary.xcconfig"; sourceTree = "<group>"; };
 		D0948A88178159DA00BA8F23 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		D0948A8D178159F900BA8F23 /* libReactiveViewModel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libReactiveViewModel.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		D0948A9C178159F900BA8F23 /* ReactiveViewModel iOS Tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ReactiveViewModel iOS Tests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0948A9C178159F900BA8F23 /* ReactiveViewModel iOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ReactiveViewModel iOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0948AB317815ABD00BA8F23 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		D0948AB617815AC700BA8F23 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		D0948ABC17815B1800BA8F23 /* ReactiveViewModelTests-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ReactiveViewModelTests-Prefix.pch"; sourceTree = "<group>"; };
-		D0948B3B17815E7300BA8F23 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		D0948B3E17815E9700BA8F23 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		D0948B531781610600BA8F23 /* RVMViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RVMViewModel.h; sourceTree = "<group>"; };
 		D0948B541781610600BA8F23 /* RVMViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RVMViewModel.m; sourceTree = "<group>"; };
@@ -113,12 +113,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0948B3D17815E7800BA8F23 /* SenTestingKit.framework in Frameworks */,
+				BEB7DA491963536900F69C4F /* libSpecta-OSX.a in Frameworks */,
+				BEB7DA4419634C4700F69C4F /* XCTest.framework in Frameworks */,
 				D0948A59178159AD00BA8F23 /* ReactiveViewModel.framework in Frameworks */,
 				D4ACA4DF18DB980500EBD899 /* ReactiveCocoa.framework in Frameworks */,
 				D0948AB517815AC200BA8F23 /* Foundation.framework in Frameworks */,
 				D4ACA4D618DB97B500EBD899 /* libExpecta.a in Frameworks */,
-				D4ACA4DA18DB97D000EBD899 /* libSpecta.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,7 +136,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0948B3F17815E9700BA8F23 /* UIKit.framework in Frameworks */,
-				D0948B3C17815E7300BA8F23 /* SenTestingKit.framework in Frameworks */,
 				D0948AB817815ACD00BA8F23 /* Foundation.framework in Frameworks */,
 				D0948AA3178159F900BA8F23 /* libReactiveViewModel.a in Frameworks */,
 				D4ACA4D818DB97BA00EBD899 /* libSpecta-iOS.a in Frameworks */,
@@ -164,7 +163,7 @@
 				D0948A3B178159AD00BA8F23 /* ReactiveViewModel.framework */,
 				D0948A53178159AD00BA8F23 /* ReactiveViewModel Mac Tests.octest */,
 				D0948A8D178159F900BA8F23 /* libReactiveViewModel.a */,
-				D0948A9C178159F900BA8F23 /* ReactiveViewModel iOS Tests.octest */,
+				D0948A9C178159F900BA8F23 /* ReactiveViewModel iOS Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -172,6 +171,8 @@
 		D0948A3D178159AD00BA8F23 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BEB7DA481963536900F69C4F /* libSpecta-OSX.a */,
+				BEB7DA4219634B5A00F69C4F /* XCTest.framework */,
 				D4ACA4D918DB97D000EBD899 /* libSpecta.a */,
 				D4ACA4D718DB97BA00EBD899 /* libSpecta-iOS.a */,
 				D4ACA4D518DB97B500EBD899 /* libExpecta.a */,
@@ -180,7 +181,6 @@
 				D4ACA4D318DB97A600EBD899 /* libReactiveCocoa-iOS.a */,
 				D0948AB617815AC700BA8F23 /* Foundation.framework */,
 				D0948AB317815ABD00BA8F23 /* Foundation.framework */,
-				D0948B3B17815E7300BA8F23 /* SenTestingKit.framework */,
 				D0948B3E17815E9700BA8F23 /* UIKit.framework */,
 			);
 			name = Frameworks;
@@ -366,7 +366,7 @@
 			name = "ReactiveViewModel Mac Tests";
 			productName = ReactiveViewModelTests;
 			productReference = D0948A53178159AD00BA8F23 /* ReactiveViewModel Mac Tests.octest */;
-			productType = "com.apple.product-type.bundle";
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		D0948A8C178159F900BA8F23 /* ReactiveViewModel iOS */ = {
 			isa = PBXNativeTarget;
@@ -400,7 +400,7 @@
 			);
 			name = "ReactiveViewModel iOS Tests";
 			productName = ReactiveViewModelTests;
-			productReference = D0948A9C178159F900BA8F23 /* ReactiveViewModel iOS Tests.octest */;
+			productReference = D0948A9C178159F900BA8F23 /* ReactiveViewModel iOS Tests.xctest */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -409,6 +409,7 @@
 		D0948A32178159AD00BA8F23 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastTestingUpgradeCheck = 0510;
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = GitHub;
 			};
@@ -580,16 +581,20 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D0948A83178159DA00BA8F23 /* Mac-Application.xcconfig */;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
 				GCC_PREFIX_HEADER = "ReactiveViewModelTests/ReactiveViewModelTests-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
 					External/ReactiveCocoa/external/specta/src,
 					"External/ReactiveCocoa/external/expecta/src/**",
 				);
 				INFOPLIST_FILE = "ReactiveViewModelTests/ReactiveViewModelTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = octest;
 			};
 			name = Debug;
 		};
@@ -597,16 +602,20 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D0948A83178159DA00BA8F23 /* Mac-Application.xcconfig */;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
 				GCC_PREFIX_HEADER = "ReactiveViewModelTests/ReactiveViewModelTests-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
 					External/ReactiveCocoa/external/specta/src,
 					"External/ReactiveCocoa/external/expecta/src/**",
 				);
 				INFOPLIST_FILE = "ReactiveViewModelTests/ReactiveViewModelTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;
 		};
@@ -649,7 +658,7 @@
 				INFOPLIST_FILE = "ReactiveViewModelTests/ReactiveViewModelTests-Info.plist";
 				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = octest;
+				WRAPPER_EXTENSION = xctest;
 			};
 			name = Debug;
 		};
@@ -670,7 +679,7 @@
 				INFOPLIST_FILE = "ReactiveViewModelTests/ReactiveViewModelTests-Info.plist";
 				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = octest;
+				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
 		};
@@ -702,16 +711,20 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D0948A83178159DA00BA8F23 /* Mac-Application.xcconfig */;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
 				GCC_PREFIX_HEADER = "ReactiveViewModelTests/ReactiveViewModelTests-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
 					External/ReactiveCocoa/external/specta/src,
 					"External/ReactiveCocoa/external/expecta/src/**",
 				);
 				INFOPLIST_FILE = "ReactiveViewModelTests/ReactiveViewModelTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = octest;
 			};
 			name = Profile;
 		};
@@ -743,7 +756,7 @@
 				INFOPLIST_FILE = "ReactiveViewModelTests/ReactiveViewModelTests-Info.plist";
 				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = octest;
+				WRAPPER_EXTENSION = xctest;
 			};
 			name = Profile;
 		};
@@ -775,16 +788,20 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D0948A83178159DA00BA8F23 /* Mac-Application.xcconfig */;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
 				GCC_PREFIX_HEADER = "ReactiveViewModelTests/ReactiveViewModelTests-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
 					External/ReactiveCocoa/external/specta/src,
 					"External/ReactiveCocoa/external/expecta/src/**",
 				);
 				INFOPLIST_FILE = "ReactiveViewModelTests/ReactiveViewModelTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = octest;
 			};
 			name = Test;
 		};
@@ -814,9 +831,10 @@
 					"External/ReactiveCocoa/external/expecta/src/**",
 				);
 				INFOPLIST_FILE = "ReactiveViewModelTests/ReactiveViewModelTests-Info.plist";
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = octest;
+				WRAPPER_EXTENSION = xctest;
 			};
 			name = Test;
 		};
