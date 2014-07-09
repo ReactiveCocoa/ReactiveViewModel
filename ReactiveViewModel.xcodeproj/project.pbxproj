@@ -61,7 +61,7 @@
 		D0948A48178159AD00BA8F23 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D0948A4A178159AD00BA8F23 /* ReactiveViewModel-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ReactiveViewModel-Prefix.pch"; sourceTree = "<group>"; };
 		D0948A4B178159AD00BA8F23 /* ReactiveViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReactiveViewModel.h; sourceTree = "<group>"; };
-		D0948A53178159AD00BA8F23 /* ReactiveViewModel Mac Tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "ReactiveViewModel Mac Tests.octest"; path = "ReactiveViewModel Mac Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0948A53178159AD00BA8F23 /* ReactiveViewModel Mac Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ReactiveViewModel Mac Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0948A5C178159AD00BA8F23 /* ReactiveViewModelTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ReactiveViewModelTests-Info.plist"; sourceTree = "<group>"; };
 		D0948A5E178159AD00BA8F23 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D0948A75178159DA00BA8F23 /* Common.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Common.xcconfig; sourceTree = "<group>"; };
@@ -161,7 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				D0948A3B178159AD00BA8F23 /* ReactiveViewModel.framework */,
-				D0948A53178159AD00BA8F23 /* ReactiveViewModel Mac Tests.octest */,
+				D0948A53178159AD00BA8F23 /* ReactiveViewModel Mac Tests.xctest */,
 				D0948A8D178159F900BA8F23 /* libReactiveViewModel.a */,
 				D0948A9C178159F900BA8F23 /* ReactiveViewModel iOS Tests.xctest */,
 			);
@@ -365,7 +365,7 @@
 			);
 			name = "ReactiveViewModel Mac Tests";
 			productName = ReactiveViewModelTests;
-			productReference = D0948A53178159AD00BA8F23 /* ReactiveViewModel Mac Tests.octest */;
+			productReference = D0948A53178159AD00BA8F23 /* ReactiveViewModel Mac Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		D0948A8C178159F900BA8F23 /* ReactiveViewModel iOS */ = {
