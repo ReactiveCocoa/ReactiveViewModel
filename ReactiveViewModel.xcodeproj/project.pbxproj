@@ -410,7 +410,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastTestingUpgradeCheck = 0510;
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = GitHub;
 			};
 			buildConfigurationList = D0948A35178159AD00BA8F23 /* Build configuration list for PBXProject "ReactiveViewModel" */;
@@ -533,7 +533,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D0948A77178159DA00BA8F23 /* Debug.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 			};
@@ -543,7 +542,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D0948A79178159DA00BA8F23 /* Release.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 			};
@@ -687,7 +685,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D0948A78178159DA00BA8F23 /* Profile.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 			};
@@ -764,7 +761,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D0948A7A178159DA00BA8F23 /* Test.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 			};
