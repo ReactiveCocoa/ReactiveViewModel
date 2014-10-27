@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		BEB7DA4419634C4700F69C4F /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEB7DA4219634B5A00F69C4F /* XCTest.framework */; };
+		D0731B7219FEFE2A00C01E16 /* SwiftSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0731B7119FEFE2A00C01E16 /* SwiftSpec.swift */; };
+		D0731B7319FEFE2A00C01E16 /* SwiftSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0731B7119FEFE2A00C01E16 /* SwiftSpec.swift */; };
 		D0948A59178159AD00BA8F23 /* ReactiveViewModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0948A3B178159AD00BA8F23 /* ReactiveViewModel.framework */; };
 		D0948AB417815ABD00BA8F23 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0948AB317815ABD00BA8F23 /* Foundation.framework */; };
 		D0948AB517815AC200BA8F23 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0948AB317815ABD00BA8F23 /* Foundation.framework */; };
@@ -24,6 +26,14 @@
 		D0C7C3C919FEFC950069B5C0 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0C7C3C719FEFC7D0069B5C0 /* ReactiveCocoa.framework */; };
 		D0C7C3CA19FEFCBE0069B5C0 /* RVMViewModelSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = D0948B591781618A00BA8F23 /* RVMViewModelSpec.m */; };
 		D0C7C3CB19FEFCBE0069B5C0 /* RVMTestViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D0948B5D178161A800BA8F23 /* RVMTestViewModel.m */; };
+		D0C7C3D019FEFCDF0069B5C0 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0C7C3CE19FEFCDF0069B5C0 /* Quick.framework */; };
+		D0C7C3D219FEFD040069B5C0 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0C7C3D119FEFD040069B5C0 /* Nimble.framework */; };
+		D0C7C3D319FEFD040069B5C0 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0C7C3D119FEFD040069B5C0 /* Nimble.framework */; };
+		D0C7C3D419FEFD0A0069B5C0 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0C7C3CE19FEFCDF0069B5C0 /* Quick.framework */; };
+		D0C7C3D619FEFD1B0069B5C0 /* ReactiveCocoa.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = D0C7C3C719FEFC7D0069B5C0 /* ReactiveCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D0C7C3D719FEFD1D0069B5C0 /* Nimble.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = D0C7C3D119FEFD040069B5C0 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D0C7C3D819FEFD1F0069B5C0 /* Quick.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = D0C7C3CE19FEFCDF0069B5C0 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D0C7C3DA19FEFD260069B5C0 /* ReactiveViewModel.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = D0948A3B178159AD00BA8F23 /* ReactiveViewModel.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,8 +53,26 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		D0C7C3D519FEFD120069B5C0 /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D0C7C3D619FEFD1B0069B5C0 /* ReactiveCocoa.framework in Copy Frameworks */,
+				D0C7C3D719FEFD1D0069B5C0 /* Nimble.framework in Copy Frameworks */,
+				D0C7C3D819FEFD1F0069B5C0 /* Quick.framework in Copy Frameworks */,
+				D0C7C3DA19FEFD260069B5C0 /* ReactiveViewModel.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		BEB7DA4219634B5A00F69C4F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		D0731B7119FEFE2A00C01E16 /* SwiftSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftSpec.swift; sourceTree = "<group>"; };
 		D0948A3B178159AD00BA8F23 /* ReactiveViewModel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ReactiveViewModel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0948A46178159AD00BA8F23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D0948A4B178159AD00BA8F23 /* ReactiveViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReactiveViewModel.h; sourceTree = "<group>"; };
@@ -79,6 +107,8 @@
 		D0C7C3A719FEFB520069B5C0 /* ReactiveViewModel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ReactiveViewModel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0C7C3B119FEFB520069B5C0 /* ReactiveViewModel iOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ReactiveViewModel iOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0C7C3C719FEFC7D0069B5C0 /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ReactiveCocoa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0C7C3CE19FEFCDF0069B5C0 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Quick.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0C7C3D119FEFD040069B5C0 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Nimble.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +125,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0C7C3D219FEFD040069B5C0 /* Nimble.framework in Frameworks */,
+				D0C7C3D019FEFCDF0069B5C0 /* Quick.framework in Frameworks */,
 				BEB7DA4419634C4700F69C4F /* XCTest.framework in Frameworks */,
 				D0948A59178159AD00BA8F23 /* ReactiveViewModel.framework in Frameworks */,
 				D0948AB517815AC200BA8F23 /* Foundation.framework in Frameworks */,
@@ -114,6 +146,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0C7C3B219FEFB520069B5C0 /* ReactiveViewModel.framework in Frameworks */,
+				D0C7C3D319FEFD040069B5C0 /* Nimble.framework in Frameworks */,
+				D0C7C3D419FEFD0A0069B5C0 /* Quick.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,6 +179,8 @@
 		D0948A3D178159AD00BA8F23 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D0C7C3D119FEFD040069B5C0 /* Nimble.framework */,
+				D0C7C3CE19FEFCDF0069B5C0 /* Quick.framework */,
 				D0C7C3C719FEFC7D0069B5C0 /* ReactiveCocoa.framework */,
 				BEB7DA4219634B5A00F69C4F /* XCTest.framework */,
 				D0948AB617815AC700BA8F23 /* Foundation.framework */,
@@ -187,6 +223,7 @@
 				D0948A5C178159AD00BA8F23 /* Info.plist */,
 				D0948B5C178161A800BA8F23 /* RVMTestViewModel.h */,
 				D0948B5D178161A800BA8F23 /* RVMTestViewModel.m */,
+				D0731B7119FEFE2A00C01E16 /* SwiftSpec.swift */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -359,6 +396,7 @@
 				D0C7C3AD19FEFB520069B5C0 /* Sources */,
 				D0C7C3AE19FEFB520069B5C0 /* Frameworks */,
 				D0C7C3AF19FEFB520069B5C0 /* Resources */,
+				D0C7C3D519FEFD120069B5C0 /* Copy Frameworks */,
 			);
 			buildRules = (
 			);
@@ -452,6 +490,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0731B7219FEFE2A00C01E16 /* SwiftSpec.swift in Sources */,
 				D0948B5A1781618A00BA8F23 /* RVMViewModelSpec.m in Sources */,
 				D0948B5E178161A800BA8F23 /* RVMTestViewModel.m in Sources */,
 			);
@@ -469,6 +508,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0731B7319FEFE2A00C01E16 /* SwiftSpec.swift in Sources */,
 				D0C7C3CB19FEFCBE0069B5C0 /* RVMTestViewModel.m in Sources */,
 				D0C7C3CA19FEFCBE0069B5C0 /* RVMViewModelSpec.m in Sources */,
 			);
@@ -538,14 +578,16 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D0948A83178159DA00BA8F23 /* Mac-Application.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
 					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
-				INFOPLIST_FILE = "ReactiveViewModelTests/ReactiveViewModelTests-Info.plist";
+				INFOPLIST_FILE = ReactiveViewModelTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -553,12 +595,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D0948A83178159DA00BA8F23 /* Mac-Application.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
 					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
-				INFOPLIST_FILE = "ReactiveViewModelTests/ReactiveViewModelTests-Info.plist";
+				INFOPLIST_FILE = ReactiveViewModelTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -590,12 +633,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D0948A83178159DA00BA8F23 /* Mac-Application.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
 					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
-				INFOPLIST_FILE = "ReactiveViewModelTests/ReactiveViewModelTests-Info.plist";
+				INFOPLIST_FILE = ReactiveViewModelTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -627,14 +671,16 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D0948A83178159DA00BA8F23 /* Mac-Application.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
 					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
-				INFOPLIST_FILE = "ReactiveViewModelTests/ReactiveViewModelTests-Info.plist";
+				INFOPLIST_FILE = ReactiveViewModelTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Test;
 		};
@@ -646,10 +692,6 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/ReactiveViewModel-ciqacrkmogystcewplmiqyztuqwv/Build/Products/Debug",
-				);
 				INFOPLIST_FILE = ReactiveViewModel/Info.plist;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -664,10 +706,6 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/ReactiveViewModel-ciqacrkmogystcewplmiqyztuqwv/Build/Products/Debug",
-				);
 				INFOPLIST_FILE = ReactiveViewModel/Info.plist;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -682,10 +720,6 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/ReactiveViewModel-ciqacrkmogystcewplmiqyztuqwv/Build/Products/Debug",
-				);
 				INFOPLIST_FILE = ReactiveViewModel/Info.plist;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -700,10 +734,6 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/ReactiveViewModel-ciqacrkmogystcewplmiqyztuqwv/Build/Products/Debug",
-				);
 				INFOPLIST_FILE = ReactiveViewModel/Info.plist;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -714,12 +744,15 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D0948A7F178159DA00BA8F23 /* iOS-Application.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = ReactiveViewModelTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -727,11 +760,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D0948A7F178159DA00BA8F23 /* iOS-Application.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = ReactiveViewModelTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -740,12 +775,15 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D0948A7F178159DA00BA8F23 /* iOS-Application.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = ReactiveViewModelTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Test;
 		};
@@ -753,11 +791,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D0948A7F178159DA00BA8F23 /* iOS-Application.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = ReactiveViewModelTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Profile;
@@ -807,6 +847,7 @@
 				D0C7C3BE19FEFB520069B5C0 /* Profile */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D0C7C3BF19FEFB520069B5C0 /* Build configuration list for PBXNativeTarget "ReactiveViewModel iOS Tests" */ = {
 			isa = XCConfigurationList;
@@ -817,6 +858,7 @@
 				D0C7C3C319FEFB520069B5C0 /* Profile */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

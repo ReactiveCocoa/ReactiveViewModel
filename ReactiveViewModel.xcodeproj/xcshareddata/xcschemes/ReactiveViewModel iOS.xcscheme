@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D0C7C3A619FEFB520069B5C0"
-               BuildableName = "ReactiveViewModel iOS.framework"
+               BuildableName = "ReactiveViewModel.framework"
                BlueprintName = "ReactiveViewModel iOS"
                ReferencedContainer = "container:ReactiveViewModel.xcodeproj">
             </BuildableReference>
@@ -57,7 +57,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D0C7C3A619FEFB520069B5C0"
-            BuildableName = "ReactiveViewModel iOS.framework"
+            BuildableName = "ReactiveViewModel.framework"
             BlueprintName = "ReactiveViewModel iOS"
             ReferencedContainer = "container:ReactiveViewModel.xcodeproj">
          </BuildableReference>
@@ -76,7 +76,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D0C7C3A619FEFB520069B5C0"
-            BuildableName = "ReactiveViewModel iOS.framework"
+            BuildableName = "ReactiveViewModel.framework"
             BlueprintName = "ReactiveViewModel iOS"
             ReferencedContainer = "container:ReactiveViewModel.xcodeproj">
          </BuildableReference>
@@ -94,7 +94,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D0C7C3A619FEFB520069B5C0"
-            BuildableName = "ReactiveViewModel iOS.framework"
+            BuildableName = "ReactiveViewModel.framework"
             BlueprintName = "ReactiveViewModel iOS"
             ReferencedContainer = "container:ReactiveViewModel.xcodeproj">
          </BuildableReference>

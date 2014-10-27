@@ -6,7 +6,7 @@
 //  Copyright (c) 2012 GitHub. All rights reserved.
 //
 
-#import "RVMViewModel.h"
+#import <ReactiveViewModel/ReactiveViewModel.h>
 
 @interface RVMTestViewModel : RVMViewModel
 @end
