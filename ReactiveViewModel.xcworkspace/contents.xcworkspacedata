@@ -5,12 +5,6 @@
       location = "group:ReactiveViewModel.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:External/ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:External/ReactiveCocoa/external/expecta/Expecta.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:External/ReactiveCocoa/external/specta/Specta.xcodeproj">
+      location = "group:External/ReactiveCocoa/ReactiveCocoa.xcodeproj">
    </FileRef>
 </Workspace>
