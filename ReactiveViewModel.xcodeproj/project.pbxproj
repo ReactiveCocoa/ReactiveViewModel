@@ -91,6 +91,8 @@
 		D0948B591781618A00BA8F23 /* RVMViewModelSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RVMViewModelSpec.m; sourceTree = "<group>"; };
 		D0948B5C178161A800BA8F23 /* RVMTestViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RVMTestViewModel.h; sourceTree = "<group>"; };
 		D0948B5D178161A800BA8F23 /* RVMTestViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RVMTestViewModel.m; sourceTree = "<group>"; };
+		D0C7C39E19FEF8F60069B5C0 /* Framework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Framework.xcconfig; path = External/ReactiveCocoa/External/xcconfigs/Base/Targets/Framework.xcconfig; sourceTree = SOURCE_ROOT; };
+		D0C7C39F19FEF8FC0069B5C0 /* iOS-Framework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = "iOS-Framework.xcconfig"; path = "External/ReactiveCocoa/External/xcconfigs/iOS/iOS-Framework.xcconfig"; sourceTree = SOURCE_ROOT; };
 		D4ACA4D118DB97A000EBD899 /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = External/ReactiveCocoa/ReactiveCocoaFramework/build/Debug/ReactiveCocoa.framework; sourceTree = "<group>"; };
 		D4ACA4D318DB97A600EBD899 /* libReactiveCocoa-iOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libReactiveCocoa-iOS.a"; path = "External/ReactiveCocoa/ReactiveCocoaFramework/build/Debug-iphoneos/libReactiveCocoa-iOS.a"; sourceTree = "<group>"; };
 		D4ACA4D518DB97B500EBD899 /* libExpecta.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libExpecta.a; path = External/ReactiveCocoa/external/expecta/build/Debug/libExpecta.a; sourceTree = "<group>"; };
@@ -264,6 +266,7 @@
 			isa = PBXGroup;
 			children = (
 				D0948A7C178159DA00BA8F23 /* Application.xcconfig */,
+				D0C7C39E19FEF8F60069B5C0 /* Framework.xcconfig */,
 				D0948A7D178159DA00BA8F23 /* StaticLibrary.xcconfig */,
 			);
 			path = Targets;
@@ -274,6 +277,7 @@
 			children = (
 				D0948A7F178159DA00BA8F23 /* iOS-Application.xcconfig */,
 				D0948A80178159DA00BA8F23 /* iOS-Base.xcconfig */,
+				D0C7C39F19FEF8FC0069B5C0 /* iOS-Framework.xcconfig */,
 				D0948A81178159DA00BA8F23 /* iOS-StaticLibrary.xcconfig */,
 			);
 			path = iOS;
@@ -401,7 +405,7 @@
 			name = "ReactiveViewModel iOS Tests";
 			productName = ReactiveViewModelTests;
 			productReference = D0948A9C178159F900BA8F23 /* ReactiveViewModel iOS Tests.xctest */;
-			productType = "com.apple.product-type.bundle";
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -534,7 +538,7 @@
 			baseConfigurationReference = D0948A77178159DA00BA8F23 /* Debug.xcconfig */;
 			buildSettings = {
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 			};
 			name = Debug;
 		};
@@ -543,7 +547,7 @@
 			baseConfigurationReference = D0948A79178159DA00BA8F23 /* Release.xcconfig */;
 			buildSettings = {
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 			};
 			name = Release;
 		};
@@ -686,7 +690,7 @@
 			baseConfigurationReference = D0948A78178159DA00BA8F23 /* Profile.xcconfig */;
 			buildSettings = {
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 			};
 			name = Profile;
 		};
@@ -762,7 +766,7 @@
 			baseConfigurationReference = D0948A7A178159DA00BA8F23 /* Test.xcconfig */;
 			buildSettings = {
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 			};
 			name = Test;
 		};
