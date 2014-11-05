@@ -8,7 +8,7 @@
       location = "group:External/ReactiveCocoa/ReactiveCocoa.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:External/ReactiveCocoa/External/Quick/Quick/Quick.xcodeproj">
+      location = "group:External/ReactiveCocoa/External/Quick/Quick.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:External/ReactiveCocoa/External/Quick/Externals/Nimble/Nimble.xcodeproj">
