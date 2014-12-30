@@ -1,1 +1,1 @@
-github "ReactiveCocoa/ReactiveCocoa" "carthage-0.5"
+github "ReactiveCocoa/ReactiveCocoa" ~> 2.4.3
