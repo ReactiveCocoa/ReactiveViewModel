@@ -1,4 +1,1 @@
-github "ReactiveCocoa/ReactiveCocoa" ~> 2.4.1
-github "jspahrsummers/xcconfigs" >= 0.6
-github "Quick/Quick" == 0.2.0
-github "Quick/Nimble"
+github "ReactiveCocoa/ReactiveCocoa" "carthage-0.5"
