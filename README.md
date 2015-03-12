@@ -1,4 +1,7 @@
-[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+<p align="right">
+<a href="https://github.com/Carthage/Carthage"><img src="https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat" alt="Carthage compatible"/></a>
+</p>
+
 # ReactiveViewModel
 
 ReactiveViewModel is a combination code/documentation project for building Cocoa
