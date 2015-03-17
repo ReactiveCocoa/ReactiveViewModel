@@ -1,4 +1,5 @@
-# ReactiveViewModel
+
+# ReactiveViewModel [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
 ReactiveViewModel is a combination code/documentation project for building Cocoa
 applications using [Model-View-ViewModel](#model-view-viewmodel) and
