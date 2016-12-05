@@ -8,8 +8,7 @@
 
 #import "RVMViewModel.h"
 #import <libkern/OSAtomic.h>
-#import <ReactiveCocoa/EXTScope.h>
-#import <ReactiveCocoa/ReactiveCocoa.h>
+#import <ReactiveObjC/ReactiveObjC.h>
 
 // The number of seconds by which signal events are throttled when using
 // -throttleSignalWhileInactive:.

@@ -8,7 +8,7 @@
 
 #import <Nimble/Nimble.h>
 #import <Quick/Quick.h>
-#import <ReactiveCocoa/ReactiveCocoa.h>
+#import <ReactiveObjC/ReactiveObjC.h>
 #import <ReactiveViewModel/ReactiveViewModel.h>
 
 #import "RVMTestViewModel.h"
