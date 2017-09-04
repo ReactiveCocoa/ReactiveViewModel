@@ -6,8 +6,8 @@
 //  Copyright (c) 2012 GitHub. All rights reserved.
 //
 
-#import <Nimble/Nimble.h>
-#import <Quick/Quick.h>
+@import Nimble;
+@import Quick;
 #import <ReactiveObjC/ReactiveObjC.h>
 #import <ReactiveViewModel/ReactiveViewModel.h>
 
