@@ -13,4 +13,4 @@
 	url = https://github.com/Quick/Quick.git
 [submodule "Carthage/Checkouts/ReactiveObjC"]
 	path = Carthage/Checkouts/ReactiveObjC
-	url = https://github.com/ReactiveCocoa/ReactiveObjC
+	url = https://github.com/ReactiveCocoa/ReactiveObjC.git
