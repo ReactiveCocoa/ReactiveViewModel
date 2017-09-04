@@ -22,15 +22,15 @@
 		D0C7C3C419FEFC1C0069B5C0 /* RVMViewModel.h in Headers */ = {isa = PBXBuildFile; fileRef = D0948B531781610600BA8F23 /* RVMViewModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D0C7C3C519FEFC1C0069B5C0 /* RVMViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D0948B541781610600BA8F23 /* RVMViewModel.m */; };
 		D0C7C3C619FEFC1F0069B5C0 /* ReactiveViewModel.h in Headers */ = {isa = PBXBuildFile; fileRef = D0948A4B178159AD00BA8F23 /* ReactiveViewModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D0C7C3C819FEFC7D0069B5C0 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0C7C3C719FEFC7D0069B5C0 /* ReactiveCocoa.framework */; };
-		D0C7C3C919FEFC950069B5C0 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0C7C3C719FEFC7D0069B5C0 /* ReactiveCocoa.framework */; };
+		D0C7C3C819FEFC7D0069B5C0 /* ReactiveObjC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0C7C3C719FEFC7D0069B5C0 /* ReactiveObjC.framework */; };
+		D0C7C3C919FEFC950069B5C0 /* ReactiveObjC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0C7C3C719FEFC7D0069B5C0 /* ReactiveObjC.framework */; };
 		D0C7C3CA19FEFCBE0069B5C0 /* RVMViewModelSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = D0948B591781618A00BA8F23 /* RVMViewModelSpec.m */; };
 		D0C7C3CB19FEFCBE0069B5C0 /* RVMTestViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D0948B5D178161A800BA8F23 /* RVMTestViewModel.m */; };
 		D0C7C3D019FEFCDF0069B5C0 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0C7C3CE19FEFCDF0069B5C0 /* Quick.framework */; };
 		D0C7C3D219FEFD040069B5C0 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0C7C3D119FEFD040069B5C0 /* Nimble.framework */; };
 		D0C7C3D319FEFD040069B5C0 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0C7C3D119FEFD040069B5C0 /* Nimble.framework */; };
 		D0C7C3D419FEFD0A0069B5C0 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0C7C3CE19FEFCDF0069B5C0 /* Quick.framework */; };
-		D0C7C3D619FEFD1B0069B5C0 /* ReactiveCocoa.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = D0C7C3C719FEFC7D0069B5C0 /* ReactiveCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D0C7C3D619FEFD1B0069B5C0 /* ReactiveObjC.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = D0C7C3C719FEFC7D0069B5C0 /* ReactiveObjC.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D0C7C3D719FEFD1D0069B5C0 /* Nimble.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = D0C7C3D119FEFD040069B5C0 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D0C7C3D819FEFD1F0069B5C0 /* Quick.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = D0C7C3CE19FEFCDF0069B5C0 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D0C7C3DA19FEFD260069B5C0 /* ReactiveViewModel.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = D0948A3B178159AD00BA8F23 /* ReactiveViewModel.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -60,7 +60,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				D0C7C3D619FEFD1B0069B5C0 /* ReactiveCocoa.framework in Copy Frameworks */,
+				D0C7C3D619FEFD1B0069B5C0 /* ReactiveObjC.framework in Copy Frameworks */,
 				D0C7C3D719FEFD1D0069B5C0 /* Nimble.framework in Copy Frameworks */,
 				D0C7C3D819FEFD1F0069B5C0 /* Quick.framework in Copy Frameworks */,
 				D0C7C3DA19FEFD260069B5C0 /* ReactiveViewModel.framework in Copy Frameworks */,
@@ -106,7 +106,7 @@
 		D0C7C39F19FEF8FC0069B5C0 /* iOS-Framework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = "iOS-Framework.xcconfig"; path = "Carthage/Checkouts/xcconfigs/iOS/iOS-Framework.xcconfig"; sourceTree = SOURCE_ROOT; };
 		D0C7C3A719FEFB520069B5C0 /* ReactiveViewModel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ReactiveViewModel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0C7C3B119FEFB520069B5C0 /* ReactiveViewModel iOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ReactiveViewModel iOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D0C7C3C719FEFC7D0069B5C0 /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ReactiveCocoa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0C7C3C719FEFC7D0069B5C0 /* ReactiveObjC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ReactiveObjC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0C7C3CE19FEFCDF0069B5C0 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Quick.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0C7C3D119FEFD040069B5C0 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Nimble.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -117,7 +117,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0948AB417815ABD00BA8F23 /* Foundation.framework in Frameworks */,
-				D0C7C3C919FEFC950069B5C0 /* ReactiveCocoa.framework in Frameworks */,
+				D0C7C3C919FEFC950069B5C0 /* ReactiveObjC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,7 +137,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0C7C3C819FEFC7D0069B5C0 /* ReactiveCocoa.framework in Frameworks */,
+				D0C7C3C819FEFC7D0069B5C0 /* ReactiveObjC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,7 +181,7 @@
 			children = (
 				D0C7C3D119FEFD040069B5C0 /* Nimble.framework */,
 				D0C7C3CE19FEFCDF0069B5C0 /* Quick.framework */,
-				D0C7C3C719FEFC7D0069B5C0 /* ReactiveCocoa.framework */,
+				D0C7C3C719FEFC7D0069B5C0 /* ReactiveObjC.framework */,
 				BEB7DA4219634B5A00F69C4F /* XCTest.framework */,
 				D0948AB617815AC700BA8F23 /* Foundation.framework */,
 				D0948AB317815ABD00BA8F23 /* Foundation.framework */,
